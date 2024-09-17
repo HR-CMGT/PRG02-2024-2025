@@ -2,9 +2,8 @@
 
 [Installatiehandleiding](./Installatie)
 
-Problemen met XAMPP, kijk eerst in de [XAMPP Hotline](./Installatie/XAMPP-HOTLINE.md). 
-
-[Link naar Brightspace](https://brightspace.hr.nl/d2l/home/28859)
+//todo: aanpassen link naar Brightspace
+[Link naar Brightspace](https://brightspace.hr.nl/)
 
 Hier vind je alle informatie, lesopdrachten, oefeningen, startcode en uitwerkingen voor programmeren 2.
 Binnen deze cursus leer je CRUD functionaliteit bouwen in een website met behulp van [PHP](https://www.php.net/).

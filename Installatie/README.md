@@ -5,11 +5,13 @@
 - [Download](#Download)
 - [Jetbrains Account](#jetbrains-account)
 - [Installatie](#installatie)
+  - [GIT](#git)
   - [Jetbrains Toolbox](#jetbrains-toolbox)
   - [Laravel Herd](#installatie-laravel-herd)
+    - [Configuratie Herd](#configuratie-herd)
+  - [PHPStorm](#phpstorm)
   - [DBngin](#dbngin)
     - [Database toevoegen](#database-toevoegen)
-  - [GIT](#git)
 - [PHP Projecten](#php-projecten)
   - [Lesopdrachten](#lesopdrachten)
   - [Werkmap](#werkmap)
@@ -38,6 +40,21 @@ van de Hogeschool Rotterdam.
 --------------------
 
 # Installatie
+
+## GIT
+
+### Mac
+- De meeste Macs hebben GIT al geïnstalleerd. Open Terminal en typ `git --version`.
+  Als je een versienummer ziet, is GIT al geïnstalleerd en kan je deze stap overslaan.
+  Zo niet, dan kun je GIT installeren via de [GIT website](https://git-scm.com/download/mac). Ik zou de Homebrew optie
+  aanraden. Dit zal je op de Mac later ook nog nodig hebben.
+
+### Windows
+- Dubbelklik de installer en volg de stappen. Laat alle settings staan zoals ze staan behalve:
+- Bij **select components** vink je de optie _Add a Git Bash Profile to Windows Terminal_
+  ![git-select-components.png](images/git/git-select-components.png)
+- Bij het scherm **Adjusting the name of the initial branch in new repositories** kies je voor _main_
+  ![git-override-main.png](images/git/git-override-main.png)
 
 ## Jetbrains Toolbox
 
@@ -105,7 +122,9 @@ daarin een nieuw PHP-bestand maken.
 - Kies voor _Trust Project_
 - Aan de linkerkant zie je een icoontje van een folder om de folderstructuur te zien. Klik hierop als deze nog niet
 zichtbaar is. 
-- Rechtermuisklik op de hoofdmap en kies voor _New > PHP File_
+- Rechtermuisklik op de hoofdmap en kies voor _New > Directory_
+  - Geef de map de naam _serverinfo_
+- Rechtermuisklik op de map _serverinfo_ en kies voor _New > PHP File_
 - Geef het bestand de naam `phpinfo.php`
 - Typ in dit bestand 
   ```php
@@ -116,7 +135,7 @@ Je kunt het resultaat testen door de pagina in de browser te openen.
 - Klik met de rechtermuisknop op **Herd** in de system tray en kies voor _Open Sites_.
 - Bij de settings van de site 'Development' kun je op het url klikken. In de toekomst kun je direct `development.test` 
 intikken in de browser.
-- Klik op de link `phpinfo.php` en je ziet nu een pagina met alle PHP-instellingen.
+- Klik op de link `serverinfo` en vervolgens op `phpinfo.php` en je ziet nu een pagina met alle PHP-instellingen.
 
 ⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het verstandig om 
 het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie over de server en kan een
@@ -145,47 +164,33 @@ Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database
     - **Password**: _leeg laten_
 
 - Klik op _Create_ en vervolgens op _OK_ om een admin toe te voegen.
-- Geef toestemming voor de toegang tot netwerken. 
-
-## GIT
-
-- **Windows**: Dubbelklik de installer en volg de stappen
-- **Mac**: De meeste Macs hebben GIT al geïnstalleerd. Open Terminal en typ `git --version`. 
-  Als je een versienummer ziet, is GIT al geïnstalleerd en kan je deze stap overslaan.
-  Zo niet, dan kun je GIT installeren via de [GIT website](https://git-scm.com/download/mac). Ik zou de Homebrew optie 
-  aanraden. Dit zal je op de Mac later ook nog nodig hebben. 
-
-Laat alle settings staan zoals ze staan behalve: 
-- Bij **select components** vink je de optie _Add a Git Bash Profile to Windows Terminal_
-  ![git-select-components.png](images/git/git-select-components.png)
-- Bij het scherm **Adjusting the name of the initial branch in new repositories** kies je voor _main_
-  ![git-override-main.png](images/git/git-override-main.png)
+- Geef toestemming voor de toegang tot netwerken.
 
 --------------------
   
 # PHP Projecten
 
 In de **Development** map gaan we drie projecten maken. Het eerste project komt van GitHub en dat is het project met 
-alle **lesopdrachten en voorbeelden**. Het tweede project is de **werkmap** waarin je alle lesopdrachten
+alle **lesopdrachten** en voorbeelden. Het tweede project is de **werkmap** waarin je alle lesopdrachten
 uitwerkt. Het laatste project is het project met de **eindopdracht**. Hierin komt de website te staan die je deze cursus 
 gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 
 ## Lesopdrachten
 
 - Ga naar de [GitHubpagina](https://GitHub.com/HR-CMGT) van CMGT en dan specifiek de [repository 
-  van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2023-2024)
+  van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2024-2025)
 - Hier zie je een groene knop met de tekst **Code**. Klik hierop en kopieer de `https` link die je ziet staan.
-- Ga nu naar PHPStorm kies voor _Get from VCS_.
-  ![get from vcs.png](images/get-from-vcs.png)
-- Plak de link van GitHub bij url en bij Directory navigeer je naar de htdocs map.
-  ![paste git link.png](images/paste-git-link.png)
-- Klik op Clone en wacht tot het project is gedownload.
-- Je ziet nu een map met de naam PRG02-2024-2025. Dit is het project met alle lesopdrachten en voorbeelden. Je 
-  kunt deze map openen in de browser via [http://localhost/](http://localhost/) 
+- Ga nu naar PHPStorm en kies voor _Get from VCS_.
+  ![new-project-from-vcs.png](images/phpstorm/new-project-from-vcs.png)
+- Plak de link van GitHub bij url en bij Directory navigeer je naar de **Development** map.
+- Achter **Development** geef je de map de naam `prg02-lesopdrachten` en klik je op _Clone_.
+  ![clone-repo.png](images/phpstorm/clone-repo.png)
+- Login met Github via de browser
+- De inhoud van de mappen is ook te zien in de browser via de link `development.test` en klik op **prg02-lesopdrachten**
 
 ## Werkmap
 
-- Maak een nieuwe map aan in de htdocs map en noem deze `prg02-werkmap`
+- Maak een nieuwe map aan in de **Development** map en noem deze `prg02-werkmap`
 - Wanneer je aan de lesopdrachten gaat werken, kopieer je de folder van de les naar deze map. 
   Zo kun je de lesopdrachten uitwerken zonder dat je de originele lesopdrachten aanpast.
 
