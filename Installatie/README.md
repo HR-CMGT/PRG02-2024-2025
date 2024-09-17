@@ -24,7 +24,7 @@
 ## Download
 
 - Download de laatste versie (8.2) van [XAMPP](https://www.apachefriends.org/download.html)
-- Download de [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/)
+- Download en installeer de [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/)
 - Download [GIT](https://git-scm.com/downloads)
 
 --------------------
@@ -35,6 +35,8 @@ Jetbrain biedt de studenten de mogelijkheid, zolang je studeert, om gratis gebru
 van hun software. Hiervoor moet je een account aanmaken op de 
 [Jetbrains website](https://www.jetbrains.com/shop/eform/students). Gebruik hiervoor je e-mailadres
 van de Hogeschool Rotterdam.
+
+Als de Jetbrains Toolbox helemaal geïnstalleerd is, kun je inloggen met je Jetbrains account. 
 
 --------------------
 
