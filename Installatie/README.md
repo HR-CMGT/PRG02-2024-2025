@@ -1,17 +1,13 @@
     Installatiestappen webserver en IDE
 
-## Inhoud 
+# Inhoud 
 
 - [Download](#Download)
 - [Jetbrains Account](#jetbrains-account)
 - [Installatie](#installatie)
-  - [XAMPP](#xampp)
   - [Jetbrains Toolbox](#jetbrains-toolbox)
+  - [Laravel Herd](#installatie-laravel-herd)
   - [GIT](#git)
-- [Configuratie](#configuratie)
-  - [PHP](#php)
-  - [Error handling](#error-handling)
-  - [htdocs](#htdocs)
 - [PHP Projecten](#php-projecten)
   - [Lesopdrachten](#lesopdrachten)
   - [Werkmap](#werkmap)
@@ -21,73 +17,126 @@
 
 --------------------
 
-## Download
+# Download
 
-- Download de laatste versie (8.2) van [XAMPP](https://www.apachefriends.org/download.html)
+- Download [Laravel Herd](https://herd.laravel.com/)
 - Download en installeer de [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/)
+- Download [DBngin](https://dbngin.com/)
 - Download [GIT](https://git-scm.com/downloads)
 
 --------------------
 
-## Jetbrains Account
+# Jetbrains Account
 
-Jetbrain biedt de studenten de mogelijkheid, zolang je studeert, om gratis gebruik te maken 
+Jetbrains biedt studenten de mogelijkheid, zolang je studeert, om gratis gebruik te maken 
 van hun software. Hiervoor moet je een account aanmaken op de 
 [Jetbrains website](https://www.jetbrains.com/shop/eform/students). Gebruik hiervoor je e-mailadres
 van de Hogeschool Rotterdam.
 
-Als de Jetbrains Toolbox helemaal geïnstalleerd is, kun je inloggen met je Jetbrains account. 
-
 --------------------
 
-## Installatie
+# Installatie
 
-### XAMPP
+## Jetbrains Toolbox
 
-- Dubbelklik de installer
-  Mocht je op de Mac de installer niet kunnen openen, dan kun je het volgende proberen:
-  - Open Settings > Security & Privacy > Scroll naar Security > Kies "Open Anyway"
-    ![open-anyway.png](images/open-anyway.png)
-  - Werkt dit nog niet? 
-    - Kopieer de "xampp-osx-8.2.4-0-installer" uit de diskimage naar je download folder
-    - en voer dan het volgende via Terminal.app uit:  
-    ```bash
-    xattr -dr com.apple.quarantine ~/Downloads/xampp-osx-8.2.4-0-installer.app
-    ```
-- Als er gevraagd wordt om de locatie te wijzigen, **doe dit niet**. Het is 
-    belangrijk dat je XAMPP installeert in de map `C:\xampp`
-![location](images/xampp2.jpg)
-- Het kan ook zijn dat je op windows de volgende melding krijgt. Omdat je XAMPP installeert
-    in de map `C:\xampp` is dit geen probleem. Je kunt deze warning negeren.
-  ![warning UAC](./images/warning-uac.png)
-- Wanneer er gevraagd wordt welke onderdelen je wilt installeren, zorg dan dat 
-    de volgende onderdelen geselecteerd zijn (voor **Windows**):
-    - Apache
-    - MySQL
-    - PHP 
-    - phpMyAdmin
-    - [Optioneel] Fake Sendmail 
-  
-  Op de **Mac** kies je voor de volgende onderdelen:
-  - XAMPP Core Files
-  
-  ![location](images/xampp1.jpg)
+- Dubbelklik de installer en volg de stappen.
+- Als de Jetbrains Toolbox helemaal geïnstalleerd is, kun je inloggen met je Jetbrains account.
+  Open de toolbox en klik op het icoontje rechtsboven in de hoek en klik op _Log in_.
 
-Tip: Zorg er voor dat het XAMPP Controle Panel altijd maar 1 x draait. Wanneer je in je system tray kijkt
-kan je daar het oranje icoontje van XAMPP zien. Als deze er al staat, **start het Control Panel
-<u>niet</u> nog een keer**! Doe je dit wel, dan is de kans groot dat je database corrupt raakt en
-zal je stappen uit de [XAMPP Hotline](./XAMPP-HOTLINE.md) moeten ondernemen.
+  ![jetbrains-toolbox-login.png](images/phpstorm/jetbrains-toolbox-login.png)
 
-![IpcHw.png](images%2FIpcHw.png)
+  Via de browser kun je nu inloggen met het Jetbrains Account dat je zojuist hebt aangemaakt.
 
-### Jetbrains Toolbox
+## Installatie Laravel Herd
 
-- Dubbelklik de installer en volg de stappen
-- Open de toolbox en log in met je Jetbrains account
-- Installeer PHPStorm vanuit de toolbox. Voer eventueel nogmaals je Jetbrains account in 
-  als er bij het opstarten om gevraagd wordt.
+- Download de laatste versie van [Laravel Herd](https://herd.laravel.com/).
+- Installeer Herd.
+- Als laatste stap heb je de mogelijkheid om de installatie te voltooien. Vink de twee opties aan
+  - _Automatically launch Herd on system startup_
+  - _Launch Herd minimized as system tray application_
+    ![complete-setup.png](images/herd/complete-setup.png)
+- Start de Laravel Herd applicatie.
+- In je system system tray (Windows rechtsonderin) zie je een icoon van Herd. Klik hierop.
+- Hiermee open je het Herd dashboard.
+  ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
 
-### GIT
+## Configuratie Herd
+
+### Development folder toevoegen
+
+- In het Dashboard zie je aan de rechterkant een kop met **Quick Access** en daaronder de knop
+  **Open Sites**. Klik hierop.
+- Klik op de knop **Add Site**.
+- Kies de optie **Link existing project**.
+- Kies nu een locatie op je harde schijf welke buiten je OneDrive of Google Drive map ligt.
+  Dit is belangrijk omdat deze mappen vaak synchroniseren en dat kan problemen geven met de
+  bestanden van je project of de rechten van de bestanden.
+- Maak de folder aan en selecteer deze. Wij hebben gekozen voor de map `C:\Users\[USER ACCOUNT]\Development`.
+- De settings in het volgende scherm kun je aanpassen naar de laatste versie van PHP, maar
+  waarschijnlijk staat dit al goed. **HTTPS** hoef je niet aan te vinken.
+- Geef toestemming voor **Windows Powershell**
+
+### Directory listing aanzetten
+
+Wanneer je in je browser de URL behorende bij de site / project opent, zie je een 404-foutmelding. Er staat immers
+nog geen bestanden in de map. Ook als er (PHP)-bestanden in de map staan (behalve index.php of index.html), zal
+je deze niet zien. Vanwege veiligheidsoverwegingen staat **directory listing** standaard uit. Om makkelijk naar
+bestanden te kunnen navigeren zetten we deze in de ontwikkelomgeving aan.
+
+- Open Powershell (Terminal op Mac).
+- Voer het volgende commando in
+  ```bash
+  herd directory-listing on
+  ```
+
+## PhpStorm
+
+- Open de Jetbrains Toolbox (System tray) en zoek naar PhpStorm.
+- Klik op _Install_ en wacht tot de installatie is voltooid.
+- Open PhpStorm vanuit de toolbox.
+- Geef toestemming voor netwerken.
+- Je kunt Jetbrains eventueel helpen door anonieme statistieken te delen.
+
+Om te testen of de server werkt hun je de map openen waarin je je PHP-bestanden gaat plaatsen en 
+daarin een nieuw PHP-bestand maken. 
+- Klik op _Open_ en open de 'Development' map. (Bijvoorbeeld `C:\Users\[USER ACCOUNT]\Development`)
+- Kies voor _Trust Project_
+- Aan de linkerkant zie je een icoontje van een folder om de folderstructuur te zien. Klik hierop als deze nog niet
+zichtbaar is. 
+- Rechtermuisklik op de hoofdmap en kies voor _New > PHP File_
+- Geef het bestand de naam `phpinfo.php`
+- Typ in dit bestand 
+  ```php
+  <?php 
+  phpinfo();
+  ```
+Je kunt het resultaat testen door de pagina in de browser te openen. 
+- Klik met de rechtermuisknop op **Herd** in de system tray en kies voor _Open Sites_.
+- Bij de settings van de site 'Development' kun je op het url klikken. In de toekomst kun je direct `development.test` 
+intikken in de browser.
+- Klik op de link `phpinfo.php` en je ziet nu een pagina met alle PHP-instellingen.
+
+⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het verstandig om 
+het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie over de server en kan een
+veiligheidsrisico vormen.
+
+🎉 Gefeliciteerd! Je hebt nu een werkende webserver en IDE.
+
+## DBngin
+
+- Dubbelklik de installer en volg de stappen. Laat de standaard opties staan. 
+- Na het starten van de applicatie vink je bovenin de twee opties aan: 
+  - _Start on login_
+  - _Show in taskbar_
+
+### Database toevoegen
+
+Als eerste gaan we een nieuwe MySQL server toevoegen, zodat we daar onze databases op kunnen aanmaken.
+- Klik op het `+`-teken om een database toe te voegen. En kies voor MySQL.
+- In het volgende overzicht kun je alle settings laten staan zoals ze zijn. Wel is het handig om het vinkje te zetten voor
+_Automatically start service on Login_.
+
+## GIT
 
 - **Windows**: Dubbelklik de installer en volg de stappen
 - **Mac**: De meeste Macs hebben GIT al geïnstalleerd. Open Terminal en typ `git --version`. 
@@ -95,57 +144,15 @@ zal je stappen uit de [XAMPP Hotline](./XAMPP-HOTLINE.md) moeten ondernemen.
   Zo niet, dan kun je GIT installeren via de [GIT website](https://git-scm.com/download/mac). Ik zou de Homebrew optie 
   aanraden. Dit zal je op de Mac later ook nog nodig hebben. 
 --------------------
-
-## Configuratie
-
-### PHP
-
-- Open de XAMPP control panel (_Manager-osx_ op de Mac)
-- Start Apache en MySQL. 
-  ![xampp control panel](images/xampp-control-panel.png)
-  - Start Apache niet op? Sluit dan alle programma's die gebruik maken van poort 80. 
-    Denk hierbij aan Skype, Dropbox, Google Drive, Discord, etc.
-  - Start MySQL niet op? Herstart dan je pc of Mac.
-- Open een browser en ga naar [http://localhost](http://localhost)
-- Je ziet nu de XAMPP dashboard pagina. 
-  ![xampp dashboard](images/dashboard.png)
-- Als je dit ziet, **is de installatie van je webserver gelukt!**
-- Wil je weten of je databaseserver ook werkt, klik dan op phpMyAdmin in het menu van het Dashboard. 
-  of ga naar [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)
-
-### Error handling
-
-Het is nu zaak om te zorgen dat je foutmeldingen te zien krijgt als er iets mis gaat.
-
-- Klik op PHPinfo in het menu van het Dashboard. 
-- Je ziet nu een pagina met alle PHP-instellingen en welke versie van PHP draait op jouw server. 
-  Dit moet versie 8.2.0 of hoger zijn.
-- Scroll naar het onderdeel _Loaded Configuration File_ dit is het configuratiebestand dat door PHP is geladen. 
-- Open dit bestand in PHPStorm of in een TextEditor. 
-- Zoek op: _error_reporting=_
-- Zorg ervoor dat de waarde op **E_ALL** staat. Dit betekent dat alle fouten getoond worden.
-- Direct eronder staat display_errors. Zorg ervoor dat deze op **On** staat. 
-  Dit betekent dat de fouten ook daadwerkelijk getoond worden.
-- Sla het bestand op en herstart de Apache server. Pas na een restart is de wijziging actief.
-
-### htdocs
-
-- Open de map htdocs uit de XAMPP folder. 
-  - Windows: `C:\xampp\htdocs`
-  - Mac: `/Applications/XAMPP/htdocs`
-- Hier zie je het bestand index.php. Dit is het bestand dat het Dashboard laadt. 
-- Hernoem dit bestand naar index.php.bak.
-- Open nu nogmaals [http://localhost](http://localhost)
-- Je ziet nu een mappenstructuur. Dit maakt het makkelijk om een project te kiezen. 
   
-## PHP Projecten
+# PHP Projecten
 
-In de `htdocs` map gaan we drie projecten maken. Het eerste project komt van GitHub en dat is het project met 
+In de **Development** map gaan we drie projecten maken. Het eerste project komt van GitHub en dat is het project met 
 alle **lesopdrachten en voorbeelden**. Het tweede project is de **werkmap** waarin je alle lesopdrachten
 uitwerkt. Het laatste project is het project met de **eindopdracht**. Hierin komt de website te staan die je deze cursus 
 gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 
-### Lesopdrachten
+## Lesopdrachten
 
 - Ga naar de [GitHubpagina](https://GitHub.com/HR-CMGT) van CMGT en dan specifiek de [repository 
   van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2023-2024)
@@ -155,21 +162,21 @@ gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 - Plak de link van GitHub bij url en bij Directory navigeer je naar de htdocs map.
   ![paste git link.png](images/paste-git-link.png)
 - Klik op Clone en wacht tot het project is gedownload.
-- Je ziet nu een map met de naam PRG02-2023-2024. Dit is het project met alle lesopdrachten en voorbeelden. Je 
+- Je ziet nu een map met de naam PRG02-2024-2025. Dit is het project met alle lesopdrachten en voorbeelden. Je 
   kunt deze map openen in de browser via [http://localhost/](http://localhost/) 
 
-### Werkmap
+## Werkmap
 
 - Maak een nieuwe map aan in de htdocs map en noem deze `prg02-werkmap`
 - Wanneer je aan de lesopdrachten gaat werken, kopieer je de folder van de les naar deze map. 
   Zo kun je de lesopdrachten uitwerken zonder dat je de originele lesopdrachten aanpast.
 
-### Eindopdracht
+## Eindopdracht
 
 - Ga in PhpStorm naar _File > New Project_
 - Kies voor empty PHP Project. 
 - Geef de folder de naam `prg02-eindopdracht`.
-- En plaats deze in de htdocs folder.
+- En plaats deze in de **Development** folder.
   ![new project.png](images/new-project.png)
 - Klik op Create en je ziet nu een lege map met de naam eindopdracht.
 
@@ -181,6 +188,7 @@ Om ervoor te zorgen dat jouw project veilig is opgeslagen, voeg je deze toe aan 
 - Eventueel moet je hierna inloggen met je GitHub account.
 - Klik op Share en je project wordt geüpload naar GitHub.
 
+[OPTIONEEL]
 ## GitHub Student Developer Pack
 
 Als onderdeel van de GitHub Student Pack heb je toegang tot allerlei gratis diensten, waaronder een gratis
