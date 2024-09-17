@@ -7,6 +7,8 @@
 - [Installatie](#installatie)
   - [Jetbrains Toolbox](#jetbrains-toolbox)
   - [Laravel Herd](#installatie-laravel-herd)
+  - [DBngin](#dbngin)
+    - [Database toevoegen](#database-toevoegen)
   - [GIT](#git)
 - [PHP Projecten](#php-projecten)
   - [Lesopdrachten](#lesopdrachten)
@@ -131,10 +133,19 @@ veiligheidsrisico vormen.
 
 ### Database toevoegen
 
-Als eerste gaan we een nieuwe MySQL server toevoegen, zodat we daar onze databases op kunnen aanmaken.
+Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database aan te kunnen maken.
 - Klik op het `+`-teken om een database toe te voegen. En kies voor MySQL.
-- In het volgende overzicht kun je alle settings laten staan zoals ze zijn. Wel is het handig om het vinkje te zetten voor
-_Automatically start service on Login_.
+![select-new-mysql-server.png](images/dbngin/select-new-mysql-server.png)
+- In het volgende overzicht pas je de volgende dingen aan.
+  - Name: MySQL
+  - vinkje voor _Automatically start service on Login_.
+  ![new-mysql-server.png](images/dbngin/new-mysql-server.png)
+  let op! Zoals aangegeven in de afbeelding (oranje letters), zijn de default credentials om te verbinden met de server:
+    - **Username**: root
+    - **Password**: _leeg laten_
+
+- Klik op _Create_ en vervolgens op _OK_ om een admin toe te voegen.
+- Geef toestemming voor de toegang tot netwerken. 
 
 ## GIT
 
@@ -143,6 +154,13 @@ _Automatically start service on Login_.
   Als je een versienummer ziet, is GIT al geïnstalleerd en kan je deze stap overslaan.
   Zo niet, dan kun je GIT installeren via de [GIT website](https://git-scm.com/download/mac). Ik zou de Homebrew optie 
   aanraden. Dit zal je op de Mac later ook nog nodig hebben. 
+
+Laat alle settings staan zoals ze staan behalve: 
+- Bij **select components** vink je de optie _Add a Git Bash Profile to Windows Terminal_
+  ![git-select-components.png](images/git/git-select-components.png)
+- Bij het scherm **Adjusting the name of the initial branch in new repositories** kies je voor _main_
+  ![git-override-main.png](images/git/git-override-main.png)
+
 --------------------
   
 # PHP Projecten
