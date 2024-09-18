@@ -200,7 +200,7 @@ gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 - Kies voor empty PHP Project. 
 - Geef de folder de naam `prg02-eindopdracht`.
 - En plaats deze in de **Development** folder.
-  ![new project.png](images/new-project.png)
+  ![new project.png](images/phpstorm/new-empty-project.png)
 - Klik op Create en je ziet nu een lege map met de naam eindopdracht.
 
 **Toevoegen aan GitHub**
@@ -211,8 +211,7 @@ Om ervoor te zorgen dat jouw project veilig is opgeslagen, voeg je deze toe aan 
 - Eventueel moet je hierna inloggen met je GitHub account.
 - Klik op Share en je project wordt geüpload naar GitHub.
 
-[OPTIONEEL]
-## GitHub Student Developer Pack
+## [OPTIONEEL] GitHub Student Developer Pack
 
 Als onderdeel van de GitHub Student Pack heb je toegang tot allerlei gratis diensten, waaronder een gratis
 account op GitHub Pro. Hiermee kun je onbeperkt private repositories aanmaken. $200 aan gratis tegoed op
