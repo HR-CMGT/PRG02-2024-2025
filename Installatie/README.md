@@ -12,11 +12,12 @@
   - [PHPStorm](#phpstorm)
   - [DBngin](#dbngin)
     - [Database toevoegen](#database-toevoegen)
+    - [PHPMyAdmin toevoegen](#phpmyadmin-toevoegen)
 - [PHP Projecten](#php-projecten)
   - [Lesopdrachten](#lesopdrachten)
   - [Werkmap](#werkmap)
   - [Eindopdracht](#eindopdracht)
-- [GitHub Student Developer Pack](#GitHub-student-developer-pack)
+- [GitHub Student Developer Pack](#OPTIONEEL-github-student-developer-pack)
   - [Domeinnaam](#domeinnaam)
 
 --------------------
@@ -166,6 +167,28 @@ Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database
 - Klik op _Create_ en vervolgens op _OK_ om een admin toe te voegen.
 - Geef toestemming voor de toegang tot netwerken.
 
+### PHPMyAdmin toevoegen
+
+Om makkelijk bij een database te kunnen om bijvoorbeeld een nieuwe database aan te maken, de inhoud van een tabel te 
+kunnen zien of om data te bewerken (admin taak) kun je gebruik maken van een database management tool. Deze bestaan in 
+desktop variant, het zit ook ingebouwd in PHPStorm, maar een veelgebruikte variant is via een Webomgeving. PHPMyAdmin
+is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het volgende.  
+
+- Download [PHPMyAdmin](https://www.phpmyadmin.net/downloads/). Je kunt de ZIP-file van de Engelse versie downloaden.
+- Bij de installatie van Herd werd er standaard een Herd map aangemaakt op je harde schijf. Open deze map.
+  ```bash
+    C:\Users\[USER ACCOUNT]\Herd
+  ```
+- Maak een nieuwe map aan in de Herd map en noem deze `phpmyadmin`.
+- Pak de ZIP-file uit en plaats de inhoud naar de map `phpmyadmin`.
+- In de map `phpmyadmin` staat een bestand `config.sample.inc.php`. Hernoem dit bestand naar `config.inc.php`.
+- Open het bestand in een teksteditor en zoek naar de regel `$cfg[‘Servers’][$i][‘AllowNoPassword’]`. 
+  Verander de waarde van `false` naar `true`.
+  ```php
+  $cfg['Servers'][$i]['AllowNoPassword'] = true;
+  ```
+- Sla het bestand op en sluit het.
+- Via de browser kun je nu PHPMyAdmin openen door naar `phpmyadmin.test` te gaan. Of via de Sites in Herd.
 --------------------
   
 # PHP Projecten
