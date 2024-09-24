@@ -17,8 +17,9 @@
   - [Lesopdrachten](#lesopdrachten)
   - [Werkmap](#werkmap)
   - [Eindopdracht](#eindopdracht)
-- [GitHub Student Developer Pack](#OPTIONEEL-github-student-developer-pack)
+- [[OPTIONEEL] GitHub Student Developer Pack](#OPTIONEEL-github-student-developer-pack)
   - [Domeinnaam](#domeinnaam)
+  - [Cloud Hosting](#cloud-hosting)
 
 --------------------
 
