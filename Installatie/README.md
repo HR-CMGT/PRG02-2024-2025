@@ -190,6 +190,10 @@ is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het v
   ```
 - Sla het bestand op en sluit het.
 - Via de browser kun je nu PHPMyAdmin openen door naar `phpmyadmin.test` te gaan. Of via de Sites in Herd.
+
+PHPMyAdmin gebruiken wij als voorbeeld in de lessen en de kennisclips. Heb je wat meer ervaring dan kun je ook 
+via `http://database.herd.test` de database benaderen.
+
 --------------------
   
 # PHP Projecten
