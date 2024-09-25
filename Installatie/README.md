@@ -25,7 +25,10 @@
 
 # Download
 
-- Download [Laravel Herd](https://herd.laravel.com/)
+Download de volgende pakketten maar installeer deze nog **NIET**. De installatie volgt stap voor stap in deze
+handleiding.
+
+- Download [Laravel Herd](https://herd.laravel.com/) (de Pro versie is niet nodig)
 - Download en installeer de [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/)
 - Download [DBngin](https://dbngin.com/)
 - Download [GIT](https://git-scm.com/downloads)
@@ -70,32 +73,48 @@ van de Hogeschool Rotterdam.
 
 ## Installatie Laravel Herd
 
-- Download de laatste versie van [Laravel Herd](https://herd.laravel.com/).
-- Installeer Herd.
-- Als laatste stap heb je de mogelijkheid om de installatie te voltooien. Vink de twee opties aan
+- Start en doorloop de installer van [Laravel Herd](https://herd.laravel.com/).
+- [MAC] Geef permissie voor nginx en dnsmasq. 
+  ![mac-permissions.png](images/herd/permission.png)
+- Als laatste stap heb je de mogelijkheid om de installatie te voltooien. 
+- [WINDOWS] Vink de twee opties aan
   - _Automatically launch Herd on system startup_
   - _Launch Herd minimized as system tray application_
-    ![complete-setup.png](images/herd/complete-setup.png)
+    ![Complete setup Windows](images/herd/complete-setup-windows.png)
+- [MAC] Vink de optie aan.
+  - _Launch Herd on system startup_
+    ![Complete setup Mac](images/herd/complete-setup-mac.png)
 - Start de Laravel Herd applicatie.
-- In je system system tray (Windows rechtsonderin) zie je een icoon van Herd. Klik hierop.
-- Hiermee open je het Herd dashboard.
-  ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
+- [WINDOWS] Open Herd dashboard
+  - In je system system tray (rechtsonderin) zie je een icoon van Herd. Klik hierop.
+  - Hiermee open je het Herd dashboard.
+    ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
+- [MAC] Open Herd Menu
+  - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
+  ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
 
 ## Configuratie Herd
 
 ### Development folder toevoegen
 
-- In het Dashboard zie je aan de rechterkant een kop met **Quick Access** en daaronder de knop
-  **Open Sites**. Klik hierop.
-- Klik op de knop **Add Site**.
-- Kies de optie **Link existing project**.
+In deze stap ga je een folder aanmaken waar alle PHP-projecten in komen te staan. Deze folder ga je toevoegen aan Herd. 
+
+_Hiervoor kies je een locatie op je harde schijf welke **buiten** je OneDrive of Google Drive map ligt. Dit is belangrijk 
+omdat deze mappen synchroniseren met de cloud wat vervelend kan zijn als het om veel bestanden gaat. Ook kan het
+problemen geven met de rechten van de bestanden. Om toch een backup te hebben van de projecten is het verstandig deze 
+toe te voegen aan GIT en te uploaden naar GitHub._ 
+
+
 - Kies nu een locatie op je harde schijf welke buiten je OneDrive of Google Drive map ligt.
-  Dit is belangrijk omdat deze mappen vaak synchroniseren en dat kan problemen geven met de
-  bestanden van je project of de rechten van de bestanden.
-- Maak de folder aan en selecteer deze. Wij hebben gekozen voor de map `C:\Users\[USER ACCOUNT]\Development`.
-- De settings in het volgende scherm kun je aanpassen naar de laatste versie van PHP, maar
-  waarschijnlijk staat dit al goed. **HTTPS** hoef je niet aan te vinken.
-- Geef toestemming voor **Windows Powershell**
+- Maak de Development folder aan.  
+  - [WINDOWS] `C:\Users\[USER ACCOUNT]\Development`.
+  - [MAC] `~/Development` of `Users/[USER ACCOUNT]/Development`. 
+- Voeg de folder als **Path** toe aan Herd
+  - [WINDOWS] Open het Dashboard en klik op General. Klik op Add Path en selecteer de map `Development`.
+    ![herd path windows](images/herd/herd-path-windows.png)
+  - [MAC] Open het Herd menu en klik op Settings. Onder de tab **General** zie je **Herd Paths** staan. Klik op het 
+    `+`-teken en selecteer de map `Development`.
+    ![herd-path-mac.png](images/herd/herd-path-mac.png)
 
 ### Directory listing aanzetten
 
