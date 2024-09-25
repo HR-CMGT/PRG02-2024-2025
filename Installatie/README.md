@@ -91,7 +91,7 @@ van de Hogeschool Rotterdam.
     ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
 - [MAC] Open Herd Menu
   - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
-  ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
+    ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
 
 ## Configuratie Herd
 
