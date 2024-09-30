@@ -95,6 +95,39 @@ van de Hogeschool Rotterdam.
 
 ## Configuratie Herd
 
+### Add trailing slash
+
+Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` kun je dit instellen in Herd.
+
+- Klik op het rechtermuisklik op het Herd icoon in de system tray (Windows) of manu bar (Mac).
+- Kies voor **configuration files**.
+- Dit opent `.config/herd` 
+- Ga nu naar `config/nginx` en open herd.conf in een teksteditor.
+- Boven het onderdeel location voeg je de volgende regel toe.
+  ```apacheconf
+  rewrite ^([^.]*[^/])$ $1/ permanent;
+  ```
+- Nu ziet je config er als volgt uit:
+  ```apacheconf
+    server {
+    listen 127.0.0.1:80 default_server;
+    #listen VALET_LOOPBACK:80; # valet loopback
+    root /;
+    charset utf-8;
+    client_max_body_size 128M;
+
+    rewrite ^([^.]*[^/])$ $1/ permanent;
+  
+    location ~* /41c270e4-5535-4daa-b23e-c269744c2f45/([A-Z]+:)(.*) {
+        internal;
+        alias $1;
+        try_files $2 $2/;
+    }
+   ```
+- Sla het bestand op en sluit het.
+- Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of manu bar (Mac) en kies voor 
+  **Stop all services** en vervolgens **Start all services**.
+
 ### Development folder toevoegen
 
 In deze stap ga je een folder aanmaken waar alle PHP-projecten in komen te staan. Deze folder ga je toevoegen aan Herd. 
