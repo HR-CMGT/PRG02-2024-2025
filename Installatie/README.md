@@ -74,24 +74,24 @@ van de Hogeschool Rotterdam.
 ## Installatie Laravel Herd
 
 - Start en doorloop de installer van [Laravel Herd](https://herd.laravel.com/).
-- [MAC] Geef permissie voor nginx en dnsmasq. 
+- [MAC] Geef permissie voor nginx en dnsmasq. En skip Herd Pro
   ![mac-permissions.png](images/herd/permission.png)
 - Als laatste stap heb je de mogelijkheid om de installatie te voltooien. 
-- [WINDOWS] Vink de twee opties aan
-  - _Automatically launch Herd on system startup_
-  - _Launch Herd minimized as system tray application_
-    ![Complete setup Windows](images/herd/complete-setup-windows.png)
-- [MAC] Vink de optie aan.
-  - _Launch Herd on system startup_
-    ![Complete setup Mac](images/herd/complete-setup-mac.png)
+  - [WINDOWS] Vink de twee opties aan
+    - _Automatically launch Herd on system startup_
+    - _Launch Herd minimized as system tray application_
+      ![Complete setup Windows](images/herd/complete-setup-windows.png)
+  - [MAC] Vink de optie aan.
+    - _Launch Herd on system startup_
+      ![Complete setup Mac](images/herd/complete-setup-mac.png)
 - Start de Laravel Herd applicatie.
-- [WINDOWS] Open Herd dashboard
-  - In je system system tray (rechtsonderin) zie je een icoon van Herd. Klik hierop.
-  - Hiermee open je het Herd dashboard.
-    ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
-- [MAC] Open Herd Menu
-  - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
-    ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
+  - [WINDOWS] Open Herd dashboard
+    - In je system system tray (rechtsonderin) zie je een icoon van Herd. Klik hierop.
+    - Hiermee open je het Herd dashboard.
+      ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
+  - [MAC] Open Herd Menu
+    - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
+      ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
 
 ## Configuratie Herd
 
@@ -101,7 +101,7 @@ Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` kun j
 
 - Klik op het rechtermuisklik op het Herd icoon in de system tray (Windows) of manu bar (Mac).
 - Kies voor **configuration files**.
-- Dit opent `.config/herd` 
+- Dit opent `.config/herd`. [MAC] Dit opent de php folder, je moet nu één map omhoog.
 - Ga nu naar `config/nginx` en open herd.conf in een teksteditor.
 - Boven het onderdeel location voeg je de volgende regel toe.
   ```apacheconf
@@ -237,7 +237,10 @@ is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het v
 - In de map `phpmyadmin` staat een bestand `config.sample.inc.php`. Hernoem dit bestand naar `config.inc.php`.
 - Open het bestand in een teksteditor en zoek naar de regel `$cfg[‘Servers’][$i][‘AllowNoPassword’]`. 
   Verander de waarde van `false` naar `true`.
+- Verander ook de host naar `127.0.0.1`
   ```php
+  $cfg['Servers'][$i]['host'] = '127.0.0.1';
+  ...
   $cfg['Servers'][$i]['AllowNoPassword'] = true;
   ```
 - Sla het bestand op en sluit het.
