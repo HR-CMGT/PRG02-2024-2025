@@ -6,9 +6,9 @@
 - [Jetbrains Account](#jetbrains-account)
 - [Installatie](#installatie)
   - [GIT](#git)
-  - [Jetbrains Toolbox](#jetbrains-toolbox)
   - [Laravel Herd](#installatie-laravel-herd)
     - [Configuratie Herd](#configuratie-herd)
+  - [Jetbrains Toolbox](#jetbrains-toolbox)
   - [PHPStorm](#phpstorm)
   - [DBngin](#dbngin)
     - [Database toevoegen](#database-toevoegen)
@@ -60,16 +60,6 @@ van de Hogeschool Rotterdam.
   ![git-select-components.png](images/git/git-select-components.png)
 - Bij het scherm **Adjusting the name of the initial branch in new repositories** kies je voor _main_
   ![git-override-main.png](images/git/git-override-main.png)
-
-## Jetbrains Toolbox
-
-- Dubbelklik de installer en volg de stappen.
-- Als de Jetbrains Toolbox helemaal geïnstalleerd is, kun je inloggen met je Jetbrains account.
-  Open de toolbox en klik op het icoontje rechtsboven in de hoek en klik op _Log in_.
-
-  ![jetbrains-toolbox-login.png](images/phpstorm/jetbrains-toolbox-login.png)
-
-  Via de browser kun je nu inloggen met het Jetbrains Account dat je zojuist hebt aangemaakt.
 
 ## Installatie Laravel Herd
 
@@ -161,6 +151,16 @@ bestanden te kunnen navigeren zetten we deze in de ontwikkelomgeving aan.
   ```bash
   herd directory-listing on
   ```
+
+## Jetbrains Toolbox
+
+- Dubbelklik de installer en volg de stappen.
+- Als de Jetbrains Toolbox helemaal geïnstalleerd is, kun je inloggen met je Jetbrains account.
+  Open de toolbox en klik op het icoontje rechtsboven in de hoek en klik op _Log in_.
+
+  ![jetbrains-toolbox-login.png](images/phpstorm/jetbrains-toolbox-login.png)
+
+  Via de browser kun je nu inloggen met het Jetbrains Account dat je zojuist hebt aangemaakt.
 
 ## PhpStorm
 
