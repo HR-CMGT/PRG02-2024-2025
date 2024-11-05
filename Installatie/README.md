@@ -31,7 +31,7 @@ handleiding.
 - Download [Laravel Herd](https://herd.laravel.com/) (de Pro versie is niet nodig)
 - Download en installeer de [Jetbrains Toolbox](https://www.jetbrains.com/toolbox-app/)
 - Download [DBngin](https://dbngin.com/)
-- Download [GIT](https://git-scm.com/downloads)
+- Download [GIT](https://git-scm.com/downloads) (Gebruik je een Mac? [Lees dan eerst het hoofdstuk hierover.](#git))
 
 --------------------
 
