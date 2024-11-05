@@ -28,7 +28,7 @@
         <img src="words-table/words-table.png" alt="words table" style="width: 40%"/>
         <blockquote>
             Werk de <a href="words-table/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in
-            de htdocs folder
+            de lesopdrachten folder
         </blockquote>
     </div>
 </section>
@@ -61,7 +61,7 @@
         </p>
         <blockquote>
             Werk de <a href="greetings/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
-            htdocs folder
+            lesopdrachten folder
         </blockquote>
     </div>
 </section>
@@ -106,7 +106,7 @@
         </p>
         <blockquote>
             Werk de <a href="../start/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
-            htdocs folder
+            lesopdrachten folder
         </blockquote>
     </div>
 </section>

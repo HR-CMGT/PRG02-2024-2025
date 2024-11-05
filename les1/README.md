@@ -7,7 +7,7 @@ _Bij deze eerste opdracht is het de bedoeling om een tabel (met twee kolommen) t
 
 ![words table](exercises/words-table/words-table.png)
 
-> Werk de [opdracht](exercises/words-table) uit in je persoonlijke map in de htdocs folder
+> Werk de [opdracht](exercises/words-table) uit in je persoonlijke map in de lesopdrachten folder
 
 Greetings
 =========
@@ -24,7 +24,7 @@ _Maak een pagina die de bezoeker welkom heet en op basis van de tijd goedemorgen
 
 **Greetings (uitwerking individueel)**
 
-> Werk de [opdracht](exercises/greetings) uit in je persoonlijke map in de htdocs folder
+> Werk de [opdracht](exercises/greetings) uit in je persoonlijke map in de lesopdrachten folder
 
 Indexpagina: een overzicht van alle albums
 ==========================================
@@ -49,7 +49,7 @@ De informatie komt uit een (associatieve) array, die je zelf hardcoded gevuld he
 
 **Index (uitwerking individueel)**
 
-> Werk de [opdracht](start) uit in je persoonlijke map in de htdocs folder
+> Werk de [opdracht](start) uit in je persoonlijke map in de lesopdrachten folder
 
 Aanvullende opdrachten
 ======================
