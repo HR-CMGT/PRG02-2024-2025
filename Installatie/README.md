@@ -87,9 +87,9 @@ van de Hogeschool Rotterdam.
 
 ### Add trailing slash
 
-Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` kun je dit instellen in Herd.
+Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` moet je de volgende stappen doorlopen in Herd:
 
-- Klik op het rechtermuisklik op het Herd icoon in de system tray (Windows) of manu bar (Mac).
+- Rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac).
 - Kies voor **configuration files**.
 - Dit opent `.config/herd`. [MAC] Dit opent de php folder, je moet nu één map omhoog.
 - Ga nu naar `config/nginx` en open herd.conf in een teksteditor.
@@ -115,7 +115,7 @@ Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` kun j
     }
    ```
 - Sla het bestand op en sluit het.
-- Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of manu bar (Mac) en kies voor 
+- Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac) en kies voor 
   **Stop all services** en vervolgens **Start all services**.
 
 ### Development folder toevoegen
@@ -141,7 +141,7 @@ toe te voegen aan GIT en te uploaden naar GitHub._
 
 ### Directory listing aanzetten
 
-Wanneer je in je browser de URL behorende bij de site / project opent, zie je een 404-foutmelding. Er staat immers
+Wanneer je in je browser de URL behorende bij de site / project opent, zie je een 404-foutmelding. Er staan immers
 nog geen bestanden in de map. Ook als er (PHP)-bestanden in de map staan (behalve index.php of index.html), zal
 je deze niet zien. Vanwege veiligheidsoverwegingen staat **directory listing** standaard uit. Om makkelijk naar
 bestanden te kunnen navigeren zetten we deze in de ontwikkelomgeving aan.
@@ -170,7 +170,7 @@ bestanden te kunnen navigeren zetten we deze in de ontwikkelomgeving aan.
 - Geef toestemming voor netwerken.
 - Je kunt Jetbrains eventueel helpen door anonieme statistieken te delen.
 
-Om te testen of de server werkt hun je de map openen waarin je je PHP-bestanden gaat plaatsen en 
+Om te testen of de server werkt kun je de map openen waarin je je PHP-bestanden gaat plaatsen en 
 daarin een nieuw PHP-bestand maken. 
 - Klik op _Open_ en open de 'Development' map. (Bijvoorbeeld `C:\Users\[USER ACCOUNT]\Development`)
 - Kies voor _Trust Project_
@@ -213,7 +213,7 @@ Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database
   - Name: MySQL
   - vinkje voor _Automatically start service on Login_.
   ![new-mysql-server.png](images/dbngin/new-mysql-server.png)
-  let op! Zoals aangegeven in de afbeelding (oranje letters), zijn de default credentials om te verbinden met de server:
+  <br>Let op! Zoals aangegeven in de afbeelding (oranje letters), zijn de default credentials om te verbinden met de server:
     - **Username**: root
     - **Password**: _leeg laten_
 
@@ -268,7 +268,7 @@ gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 - Plak de link van GitHub bij url en bij Directory navigeer je naar de **Development** map.
 - Achter **Development** geef je de map de naam `prg02-lesopdrachten` en klik je op _Clone_.
   ![clone-repo.png](images/phpstorm/clone-repo.png)
-- Login met Github via de browser
+- Login met GitHub via de browser
 - De inhoud van de mappen is ook te zien in de browser via de link `development.test` en klik op **prg02-lesopdrachten**
 
 ## Werkmap
@@ -322,7 +322,7 @@ Nadat je je hebt aangemeld voor het Student Developer Pack, kun je een gratis ac
 
 - Ga naar [https://www.digitalocean.com/github-students](https://www.digitalocean.com/github-students)
 - Klik op _Redeem your DigitalOcean credit_
-- Log in met je Github account (gebruik de knop _Sign up with Github_)
+- Log in met je GitHub account (gebruik de knop _Sign up with GitHub_)
 - _Authenticate with GitHub_ en geef Digital Ocean toegang om je e-mailadres uit te lezen.
 - Je hebt nu je eigen cloud hosting account.
 - Deze kun je bezoeken via [https://cloud.digitalocean.com](https://cloud.digitalocean.com)
