@@ -1,4 +1,4 @@
-# Programmeren 2 onderdeel van CMTTHE01-2
+# Programmeren 2 onderdeel van CMTTHE03-1
 
 [Installatiehandleiding](./Installatie)
 
