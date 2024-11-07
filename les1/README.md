@@ -58,11 +58,11 @@ _Maak de onderstaande opdrachten om met verschillende onderwerpen te oefenen_
 
 **Samenvoegen van string**
 
-> Werk de [opdracht](exercises/strings) uit uit de folder `exercises/strings`
+> Werk de [opdracht](exercises/strings) uit in de folder `exercises/strings`
 
 **Date time**
 
-> Werk de [opdracht](exercises/date-time) uit uit de folder `exercises/date-time`
+> Werk de [opdracht](exercises/date-time) uit in de folder `exercises/date-time`
 >
 > Schrijf de **huidige** datum/tijd op het scherm in verschillende notaties:
 >
@@ -72,6 +72,6 @@ _Maak de onderstaande opdrachten om met verschillende onderwerpen te oefenen_
 
 **Zodiac Sign**
 
-> Werk de [opdracht](exercises/zodiac-sign) uit uit de folder `exercises/zodiac-sign`
+> Werk de [opdracht](exercises/zodiac-sign) uit in de folder `exercises/zodiac-sign`
 >
 > Maak een webpagina die laat zien welk sterrenbeeld je hebt op basis van je verjaardag. Je verjaardag mag je hardcoded verwerken

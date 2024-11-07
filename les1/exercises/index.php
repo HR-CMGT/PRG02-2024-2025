@@ -122,7 +122,7 @@
             <strong>Samenvoegen van string</strong>
         </p>
         <blockquote>
-            Werk de <a href="strings/index.php" target="_blank"><strong>opdracht</strong></a> uit uit de folder
+            Werk de <a href="strings/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder
             <code>exercises/strings</code>
         </blockquote>
         <p>
@@ -130,7 +130,7 @@
         </p>
         <blockquote>
             <p>
-                Werk de <a href="date-time/index.php" target="_blank"><strong>opdracht</strong></a> uit uit de folder <code>exercises/date-time</code>
+                Werk de <a href="date-time/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder <code>exercises/date-time</code>
             </p>
             <p>
                 Schrijf de **huidige** datum/tijd op het scherm in verschillende notaties:
@@ -145,7 +145,7 @@
             <strong>Zodiac Sign</strong>
         </p>
         <blockquote>
-            <p>Werk de <a href="zodiac-sign/index.php" target="_blank"><strong>opdracht</strong></a> uit uit de folder <code>exercises/zodiac-sign</code>
+            <p>Werk de <a href="zodiac-sign/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder <code>exercises/zodiac-sign</code>
             </p>
 
             <p>Maak een webpagina die laat zien welk sterrenbeeld je hebt op basis van je verjaardag. Je
