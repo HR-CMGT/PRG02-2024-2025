@@ -91,7 +91,7 @@ Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` moet 
 
 - Rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac).
 - Kies voor **configuration files**.
-- Dit opent `.config/herd`. [MAC] Dit opent de php folder, je moet nu één map omhoog.
+- Dit opent `.config/herd`. [MAC] Dit opent de php map, je moet nu één map omhoog.
 - Ga nu naar `config/nginx` en open herd.conf in een teksteditor.
 - Boven het onderdeel location voeg je de volgende regel toe.
   ```apacheconf
@@ -118,9 +118,11 @@ Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` moet 
 - Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac) en kies voor 
   **Stop all services** en vervolgens **Start all services**.
 
-### Development folder toevoegen
+### Development map toevoegen
 
-In deze stap ga je een folder aanmaken waar alle PHP-projecten in komen te staan. Deze folder ga je toevoegen aan Herd. 
+In deze stap ga je een **Development** map aanmaken waar alle PHP-projecten in komen te staan. Elke map die je 
+in de Development map aanmaakt, wordt automatisch toegevoegd aan de webserver als site. Deze is dan te openen 
+in de browser via de naam van de map met `.test` erachter.
 
 _Hiervoor kies je een locatie op je harde schijf welke **buiten** je OneDrive of Google Drive map ligt. Dit is belangrijk 
 omdat deze mappen synchroniseren met de cloud wat vervelend kan zijn als het om veel bestanden gaat. Ook kan het
@@ -129,10 +131,10 @@ toe te voegen aan GIT en te uploaden naar GitHub._
 
 
 - Kies nu een locatie op je harde schijf welke buiten je OneDrive of Google Drive map ligt.
-- Maak de Development folder aan.  
+- Maak de Development map aan.  
   - [WINDOWS] `C:\Users\[USER ACCOUNT]\Development`.
   - [MAC] `~/Development` of `Users/[USER ACCOUNT]/Development`. 
-- Voeg de folder als **Path** toe aan Herd
+- Voeg de map als **Path** toe aan Herd
   - [WINDOWS] Open het Dashboard en klik op General. Klik op Add Path en selecteer de map `Development`.
     ![herd path windows](images/herd/herd-path-windows.png)
   - [MAC] Open het Herd menu en klik op Settings. Onder de tab **General** zie je **Herd Paths** staan. Klik op het 
@@ -141,13 +143,11 @@ toe te voegen aan GIT en te uploaden naar GitHub._
 
 ### Directory listing aanzetten
 
-Wanneer je in je browser de URL behorende bij de site / project opent, zie je een 404-foutmelding. Er staan immers
-nog geen bestanden in de map. Ook als er (PHP)-bestanden in de map staan (behalve index.php of index.html), zal
-je deze niet zien. Vanwege veiligheidsoverwegingen staat **directory listing** standaard uit. Om makkelijk naar
-bestanden te kunnen navigeren zetten we deze in de ontwikkelomgeving aan.
+Om straks makkelijk naar bestanden te kunnen navigeren in de browser zetten we **directory listing** aan.  Vanwege 
+veiligheidsoverwegingen staat **directory listing** standaard uit.
 
-- Open Powershell (Terminal op Mac).
-- Voer het volgende commando in
+- **Open Powershell** (**Terminal** op Mac).
+- Voer het volgende commando uit
   ```bash
   herd directory-listing on
   ```
@@ -170,32 +170,44 @@ bestanden te kunnen navigeren zetten we deze in de ontwikkelomgeving aan.
 - Geef toestemming voor netwerken.
 - Je kunt Jetbrains eventueel helpen door anonieme statistieken te delen.
 
-Om te testen of de server werkt kun je de map openen waarin je je PHP-bestanden gaat plaatsen en 
-daarin een nieuw PHP-bestand maken. 
-- Klik op _Open_ en open de 'Development' map. (Bijvoorbeeld `C:\Users\[USER ACCOUNT]\Development`)
-- Kies voor _Trust Project_
-- Aan de linkerkant zie je een icoontje van een folder om de folderstructuur te zien. Klik hierop als deze nog niet
-zichtbaar is. 
-- Rechtermuisklik op de hoofdmap en kies voor _New > Directory_
-  - Geef de map de naam _serverinfo_
-- Rechtermuisklik op de map _serverinfo_ en kies voor _New > PHP File_
+### Test de server met eigen PHP-bestand
+
+Om te testen of de server werkt voegen we een `serverinfo` map toe aan de Development map. Hierin komt een
+bestand `phpinfo.php` te staan. Dit bestand geeft informatie over de PHP-instellingen van de server.
+
+- Open de **Development** map in explorer/finder. (Bijvoorbeeld `C:\Users\[USER ACCOUNT]\Development`) en voeg de 
+map `serverinfo` toe.
+- Open PhpStorm en open de map `serverinfo`.
+- Kies voor _Trust Project_ (en vink aan dat je voortaan alle projects in de Development map vertrouwt).
+- Aan de linkerkant zie je een icoontje van een map om de mappenstructuur te zien. Klik hierop als deze nog niet
+zichtbaar is.
+- Rechtermuisklik op de hoofdmap _serverinfo_ en kies voor _New > PHP File_
 - Geef het bestand de naam `phpinfo.php`
 - Typ in dit bestand 
   ```php
   <?php 
   phpinfo();
   ```
-Je kunt het resultaat testen door de pagina in de browser te openen. 
+Dit bestand ga je nu in de browser bezoeken. 
 - Klik met de rechtermuisknop op **Herd** in de system tray en kies voor _Open Sites_.
-- Bij de settings van de site 'Development' kun je op het url klikken. In de toekomst kun je direct `development.test` 
-intikken in de browser.
-- Klik op de link `serverinfo` en vervolgens op `phpinfo.php` en je ziet nu een pagina met alle PHP-instellingen.
+- Waarschijnlijk moet je eerst op verversen klikken om de site te zien. Klik hiervoor op het icoontje met de twee pijltjes.
+- Je ziet nu de site `serverinfo.test` staan. Klik hierop.
+- De details van de site worden getoond. In de gegevens zie je URL staan, met de link naar de site. 
+  [http://serverinfo.test](http://serverinfo.test). Klik hierop.
+- Je ziet nu de volgende pagina. Klik op de link naar het bestand `phpinfo.php`.
 
-⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het verstandig om 
-het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie over de server en kan een
-veiligheidsrisico vormen.
+<div style="background-color: white; font-family: 'Times New Roman',serif; color: black;">
+<h1>Index of /</h1>
+<hr/>
+<a href="serverinfo.test/phpinfo.php" style="text-decoration: underline; color: #0000EE;">/phpinfo.php</a>
+</div>
 
-🎉 Gefeliciteerd! Je hebt nu een werkende webserver en IDE.
+- Je ziet nu een pagina met informatie over de PHP-instellingen van de server.
+- 🎉 Gefeliciteerd! Je hebt nu een werkende webserver en IDE.
+
+⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het 
+verstandig om het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie 
+over de server en kan een veiligheidsrisico vormen.
 
 ## DBngin
 
@@ -225,15 +237,11 @@ Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database
 Om makkelijk bij een database te kunnen om bijvoorbeeld een nieuwe database aan te maken, de inhoud van een tabel te 
 kunnen zien of om data te bewerken (admin taak) kun je gebruik maken van een database management tool. Deze bestaan in 
 desktop variant, het zit ook ingebouwd in PHPStorm, maar een veelgebruikte variant is via een Webomgeving. PHPMyAdmin
-is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het volgende.  
+is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het volgende:  
 
 - Download [PHPMyAdmin](https://www.phpmyadmin.net/downloads/). Je kunt de ZIP-file van de Engelse versie downloaden.
-- Bij de installatie van Herd werd er standaard een Herd map aangemaakt op je harde schijf. Open deze map.
-  ```bash
-    C:\Users\[USER ACCOUNT]\Herd
-  ```
-- Maak een nieuwe map aan in de Herd map en noem deze `phpmyadmin`.
-- Pak de ZIP-file uit en plaats de inhoud naar de map `phpmyadmin`.
+- Open de `Development` map in de Finder/Explorer en sleep de ZIP-file naar deze map.
+- Pak de ZIP-file uit en hernoem de map naar `phpmyadmin`.
 - In de map `phpmyadmin` staat een bestand `config.sample.inc.php`. Hernoem dit bestand naar `config.inc.php`.
 - Open het bestand in een teksteditor en zoek naar de regel `$cfg[‘Servers’][$i][‘AllowNoPassword’]`. 
   Verander de waarde van `false` naar `true`.
@@ -244,7 +252,8 @@ is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het v
   $cfg['Servers'][$i]['AllowNoPassword'] = true;
   ```
 - Sla het bestand op en sluit het.
-- Via de browser kun je nu PHPMyAdmin openen door naar `phpmyadmin.test` te gaan. Of via de Sites in Herd.
+- Via de browser kun je nu PHPMyAdmin openen door naar `phpmyadmin.test` te gaan. 
+  Of via de Sites in Herd (wel even verversen).
 
 --------------------
   
@@ -254,6 +263,9 @@ In de **Development** map gaan we drie projecten maken. Het eerste project komt 
 alle **lesopdrachten** en voorbeelden. Het tweede project is de **werkmap** waarin je alle lesopdrachten
 uitwerkt. Het laatste project is het project met de **eindopdracht**. Hierin komt de website te staan die je deze cursus 
 gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
+
+Dit zijn losse projecten die je ook log opent in PHPStorm. Je hebt straks dus drie projecten openstaan in PHPStorm in 
+drie verschillende vensters.
 
 ## Lesopdrachten
 
@@ -266,26 +278,31 @@ gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 - Achter **Development** geef je de map de naam `prg02-lesopdrachten` en klik je op _Clone_.
   ![clone-repo.png](images/phpstorm/clone-repo.png)
 - Login met GitHub via de browser
-- De inhoud van de mappen is ook te zien in de browser via de link `development.test` en klik op **prg02-lesopdrachten**
+- Wil je de PHP-bestanden inzien dan open je de map `prg02-lesopdrachten` in PhpStorm.
+- Je kunt het resultaat ook bekijken in de browser. Open en ververs de Sites in Herd en klik op de 
+  site `prg02-lesopdrachten.test`. Je kunt natuurlijk ook direct naar `prg02-lesopdrachten.test` in de browser gaan.
 
 ## Werkmap
 
 - Maak een nieuwe map aan in de **Development** map en noem deze `prg02-werkmap`
-- Wanneer je aan de lesopdrachten gaat werken, kopieer je de folder van de les naar deze map. 
+- Wanneer je aan de lesopdrachten gaat werken, kopieer je de map van de les naar deze map. 
   Zo kun je de lesopdrachten uitwerken zonder dat je de originele lesopdrachten aanpast.
+- In PHPStorm ga je naar _File > Open_ en navigeer je naar de map `prg02-werkmap`.
+- Open het project in een **nieuw venster**. 
 
 ## Eindopdracht
 
 - Ga in PhpStorm naar _File > New Project_
 - Kies voor empty PHP Project. 
-- Geef de folder de naam `prg02-eindopdracht`.
-- En plaats deze in de **Development** folder.
+- Geef de map de naam `prg02-eindopdracht`.
+- En plaats deze in de **Development** map.
   ![new project.png](images/phpstorm/new-empty-project.png)
 - Klik op Create en je ziet nu een lege map met de naam eindopdracht.
 
 **Toevoegen aan GitHub**
 
-Om ervoor te zorgen dat jouw project veilig is opgeslagen, voeg je deze toe aan GitHub. 
+Om ervoor te zorgen dat jouw project veilig is opgeslagen, voeg je deze toe aan GitHub. Doe dit voor het project
+met de eindopdracht. Je kunt dit ook doen voor de werkmap. 
 
 - Als het project open staat, klik je op _VCS > Share Project on GitHub_
 - Eventueel moet je hierna inloggen met je GitHub account.
@@ -305,20 +322,14 @@ Digital Ocean voor cloud hosting, een jaar lang gratis domeinnaam registratie op
 ### Domeinnaam
 
 Via the student pack kan je bij namecheap een domeinnaam (.me) registreren.
- - bezoek https://nc.me/GitHub/auth
- - login met je GitHub account behorende bij het student pack (e-mailadres van de Hogeschool Rotterdam)
- - Geef namecheap toegang tot je GitHub account
- - Kies een domeinnaam en registreer deze
- - Je hebt nu een domeinnaam die je kunt gebruiken voor je eindopdracht en deze kun je beheren in het [dashboard](https://ap.www.namecheap.com/).
- - Klik op Domain List > Domain > Redirect domain. 
- - bij Source url vul je je domeinnaam in (zonder http://) en bij Destination URL vul je het adres van je eindopdracht in.
+ - https://www.namecheap.com/support/knowledgebase/article.aspx/9687/35/how-to-register-a-domain-via-our-educational-promotion-at-ncme/?hcs_request_id=e0f2bffb47e4
 
 ### Cloud Hosting
 
 Nadat je je hebt aangemeld voor het Student Developer Pack, kun je een gratis account aanmaken op Digital Ocean.
 
 - Ga naar [https://www.digitalocean.com/github-students](https://www.digitalocean.com/github-students)
-- Klik op _Redeem your DigitalOcean credit_
+- Klik op _Git Started_
 - Log in met je GitHub account (gebruik de knop _Sign up with GitHub_)
 - _Authenticate with GitHub_ en geef Digital Ocean toegang om je e-mailadres uit te lezen.
 - Je hebt nu je eigen cloud hosting account.
