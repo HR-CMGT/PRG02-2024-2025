@@ -70,7 +70,7 @@
 <section class="section has-background-primary-light">
     <h1 class="title">Indexpagina: een overzicht van alle albums</h1>
     <h2 class="subtitle">
-        Maak een webpagina waarop een overzicht van muziekalbums te zien is en plaats deze in een tabel
+        Maak een webpagina waarop een overzicht van muziekalbums te zien is en plaats deze in een tabel.
     </h2>
     <div class="content">
         <p>

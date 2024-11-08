@@ -29,7 +29,7 @@ _Maak een pagina die de bezoeker welkom heet en op basis van de tijd goedemorgen
 Indexpagina: een overzicht van alle albums
 ==========================================
 
-_Maak een webpagina waarop een overzicht van muziekalbums te zien is en plaats deze in een tabel_
+_Maak een webpagina waarop een overzicht van muziekalbums te zien is en plaats deze in een tabel._
 
 De informatie komt uit een (associatieve) array, die je zelf hardcoded gevuld hebt met minimaal 10 albums. Hierin zit de volgende informatie:
 
