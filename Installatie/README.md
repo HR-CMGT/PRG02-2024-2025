@@ -170,6 +170,28 @@ veiligheidsoverwegingen staat **directory listing** standaard uit.
 - Geef toestemming voor netwerken.
 - Je kunt Jetbrains eventueel helpen door anonieme statistieken te delen.
 
+### Configuratie PHPStorm
+
+Als je in phpStorm werkt zitten er enorm veel toffe features, snelkoppelingen, etc waar we ook regelmatig bij stilstaan. 
+Er zijn echter ook 3 settings die standaard niet ideaal ingesteld zijn, en we raden je aan deze aan te passen als volgt:
+
+- Zet de inline completion uit. Daarmee voorkom je auto suggestions die, net als Github Copilot, je op het huidige 
+  moment in je carrière eerder tegenwerken dan helpen. Het nu zelf leren en later in je carrière deze feature aanzetten 
+  is uiteraard een logische vervolgstap. Maar fouten krijgen na autocompletion zonder dat je nog goed weet wat het 
+  doet werkt jezelf alleen maar tegen.
+  ![settings-full-completion.png](images/phpstorm/settings-full-completion.png)
+- Zet non-modal commit interface uit. Daarmee krijg je, als je gaat committen, een popup waar je beter overzicht 
+  hebt over wat je gaat committen. Zet ook het vinkje "clear initial message" aan zodat je altijd geforceerd wordt 
+  een nieuw bericht te typen voor je commit.
+  ![settings-non-modal-commit-interface.png](images/phpstorm/settings-non-modal-commit-interface.png)
+- In de popup kun je ook gemakkelijk de vinkjes voor "analyze code" en "check todo" uitzetten waardoor je geen 
+  ellenlange warnings krijgt bij een commit.
+  ![settings-commit-options.png](images/phpstorm/settings-commit-options.png)
+- We zien nog regelmatig niet mooi geformatte code voorbij komen. Als je zoekende bent in code kan dit je tegenwerken. 
+  Door het vinkje "reformat code" aan te zetten bij "actions on save" wordt je code bij het opslaan automatisch geformat 
+  en weer netjes uitgelijnd. Lang leve leesbaarheid
+  ![settings-reformat-code.png](images/phpstorm/settings-reformat-code.png)
+
 ### Test de server met eigen PHP-bestand
 
 Om te testen of de server werkt voegen we een `serverinfo` map toe aan de Development map. Hierin komt een
