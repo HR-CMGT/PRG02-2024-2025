@@ -57,30 +57,37 @@ van de Hogeschool Rotterdam.
 ### Windows
 - Dubbelklik de installer en volg de stappen. Laat alle settings staan zoals ze staan behalve:
 - Bij **select components** vink je de optie _Add a Git Bash Profile to Windows Terminal_
+
   ![git-select-components.png](images/git/git-select-components.png)
 - Bij het scherm **Adjusting the name of the initial branch in new repositories** kies je voor _main_
+
   ![git-override-main.png](images/git/git-override-main.png)
 
 ## Installatie Laravel Herd
 
 - Start en doorloop de installer van [Laravel Herd](https://herd.laravel.com/).
 - [MAC] Geef permissie voor nginx en dnsmasq. En skip Herd Pro
+
   ![mac-permissions.png](images/herd/permission.png)
 - Als laatste stap heb je de mogelijkheid om de installatie te voltooien. 
   - [WINDOWS] Vink de twee opties aan
     - _Automatically launch Herd on system startup_
     - _Launch Herd minimized as system tray application_
+
       ![Complete setup Windows](images/herd/complete-setup-windows.png)
   - [MAC] Vink de optie aan.
     - _Launch Herd on system startup_
+
       ![Complete setup Mac](images/herd/complete-setup-mac.png)
 - Start de Laravel Herd applicatie.
   - [WINDOWS] Open Herd dashboard
     - In je system system tray (rechtsonderin) zie je een icoon van Herd. Klik hierop.
     - Hiermee open je het Herd dashboard.
+
       ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
   - [MAC] Open Herd Menu
     - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
+      
       ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
 
 ## Configuratie Herd
@@ -136,9 +143,11 @@ toe te voegen aan GIT en te uploaden naar GitHub._
   - [MAC] `~/Development` of `Users/[USER ACCOUNT]/Development`. 
 - Voeg de map als **Path** toe aan Herd
   - [WINDOWS] Open het Dashboard en klik op General. Klik op Add Path en selecteer de map `Development`.
+
     ![herd path windows](images/herd/herd-path-windows.png)
   - [MAC] Open het Herd menu en klik op Settings. Onder de tab **General** zie je **Herd Paths** staan. Klik op het 
     `+`-teken en selecteer de map `Development`.
+
     ![herd-path-mac.png](images/herd/herd-path-mac.png)
 
 ### Directory listing aanzetten
@@ -179,17 +188,21 @@ Er zijn echter ook 3 settings die standaard niet ideaal ingesteld zijn, en we ra
   moment in je carrière eerder tegenwerken dan helpen. Het nu zelf leren en later in je carrière deze feature aanzetten 
   is uiteraard een logische vervolgstap. Maar fouten krijgen na autocompletion zonder dat je nog goed weet wat het 
   doet werkt jezelf alleen maar tegen.
+  
   ![settings-full-completion.png](images/phpstorm/settings-full-completion.png)
 - Zet non-modal commit interface uit. Daarmee krijg je, als je gaat committen, een popup waar je beter overzicht 
   hebt over wat je gaat committen. Zet ook het vinkje "clear initial message" aan zodat je altijd geforceerd wordt 
   een nieuw bericht te typen voor je commit.
+  
   ![settings-non-modal-commit-interface.png](images/phpstorm/settings-non-modal-commit-interface.png)
 - In de popup kun je ook gemakkelijk de vinkjes voor "analyze code" en "check todo" uitzetten waardoor je geen 
   ellenlange warnings krijgt bij een commit.
+  
   ![settings-commit-options.png](images/phpstorm/settings-commit-options.png)
 - We zien nog regelmatig niet mooi geformatte code voorbij komen. Als je zoekende bent in code kan dit je tegenwerken. 
   Door het vinkje "reformat code" aan te zetten bij "actions on save" wordt je code bij het opslaan automatisch geformat 
   en weer netjes uitgelijnd. Lang leve leesbaarheid
+  
   ![settings-reformat-code.png](images/phpstorm/settings-reformat-code.png)
 
 ### Test de server met eigen PHP-bestand
@@ -242,10 +255,12 @@ over de server en kan een veiligheidsrisico vormen.
 
 Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database aan te kunnen maken.
 - Klik op het `+`-teken om een database toe te voegen. En kies voor MySQL.
-![select-new-mysql-server.png](images/dbngin/select-new-mysql-server.png)
+
+  ![select-new-mysql-server.png](images/dbngin/select-new-mysql-server.png)
 - In het volgende overzicht pas je de volgende dingen aan.
   - Name: MySQL
   - vinkje voor _Automatically start service on Login_.
+  
   ![new-mysql-server.png](images/dbngin/new-mysql-server.png)
   <br>Let op! Zoals aangegeven in de afbeelding (oranje letters), zijn de default credentials om te verbinden met de server:
     - **Username**: root
@@ -295,9 +310,11 @@ drie verschillende vensters.
   van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2024-2025)
 - Hier zie je een groene knop met de tekst **Code**. Klik hierop en kopieer de `https` link die je ziet staan.
 - Ga nu naar PHPStorm en kies voor _Get from VCS_.
+
   ![new-project-from-vcs.png](images/phpstorm/new-project-from-vcs.png)
 - Plak de link van GitHub bij url en bij Directory navigeer je naar de **Development** map.
 - Achter **Development** geef je de map de naam `prg02-lesopdrachten` en klik je op _Clone_.
+
   ![clone-repo.png](images/phpstorm/clone-repo.png)
 - Login met GitHub via de browser
 - Wil je de PHP-bestanden inzien dan open je de map `prg02-lesopdrachten` in PhpStorm.
@@ -318,6 +335,7 @@ drie verschillende vensters.
 - Kies voor empty PHP Project. 
 - Geef de map de naam `prg02-eindopdracht`.
 - En plaats deze in de **Development** map.
+
   ![new project.png](images/phpstorm/new-empty-project.png)
 - Klik op Create en je ziet nu een lege map met de naam eindopdracht.
 
