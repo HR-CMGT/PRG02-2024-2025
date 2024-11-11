@@ -234,8 +234,9 @@ Dit bestand ga je nu in de browser bezoeken.
 <div style="background-color: white; font-family: 'Times New Roman',serif; color: black;">
 <h1>Index of /</h1>
 <hr/>
-<a href="serverinfo.test/phpinfo.php" style="text-decoration: underline; color: #0000EE;">/phpinfo.php</a>
+<a href="http://serverinfo.test/phpinfo.php" style="text-decoration: underline; color: #0000EE;">/phpinfo.php</a>
 </div>
+<br>
 
 - Je ziet nu een pagina met informatie over de PHP-instellingen van de server.
 - 🎉 Gefeliciteerd! Je hebt nu een werkende webserver en IDE.
