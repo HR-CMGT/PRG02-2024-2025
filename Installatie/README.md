@@ -11,7 +11,7 @@
   - [Jetbrains Toolbox](#jetbrains-toolbox)
   - [PHPStorm](#phpstorm)
   - [DBngin](#dbngin)
-    - [Database toevoegen](#database-toevoegen)
+    - [Database toevoegen](#databaseserver-toevoegen)
     - [PHPMyAdmin toevoegen](#phpmyadmin-toevoegen)
 - [PHP Projecten](#php-projecten)
   - [Lesopdrachten](#lesopdrachten)
@@ -252,7 +252,7 @@ over de server en kan een veiligheidsrisico vormen.
   - _Start on login_
   - _Show in taskbar_
 
-### Database toevoegen
+### Databaseserver toevoegen
 
 Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database aan te kunnen maken.
 - Klik op het `+`-teken om een database toe te voegen. En kies voor MySQL.
@@ -268,7 +268,10 @@ Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database
     - **Password**: _leeg laten_
 
 - Klik op _Create_ en vervolgens op _OK_ om een admin toe te voegen.
-- Geef toestemming voor de toegang tot netwerken.
+- Geef toestemming voor de toegang tot netwerken. 
+- De server is nu toegevoegd aan het beginscherm van DBngin. Klik op start om de server te starten. In de toekomst zal 
+na een herstart van de computer de server automatisch starten.
+  ![start-server.png](images/dbngin/start-server.png)
 
 ### PHPMyAdmin toevoegen
 
