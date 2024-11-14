@@ -118,6 +118,12 @@
             </ol>
         </blockquote>
 
+        <h2>
+            Bekijk nu de video over <a href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140">
+                technisch ontwerp, insert en delete
+            </a> op Brightspace
+        </h2>
+
         <p>
             <strong>Create (uitwerking individueel)</strong>
         </p>

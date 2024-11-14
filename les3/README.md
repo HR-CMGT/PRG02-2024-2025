@@ -46,6 +46,8 @@ Vind je dit lastig dan mag je ook een aparte pagina `(store.php)` maken die de i
 > 2.  Wat moet er stap voor stap gebeuren om het resultaat te bereiken? Let op! Je mag geen technische termen gebruiken het gaat om de functionaliteit.
 > 3.  Bedenk (of zoek op) welke technische onderdelen je nodig hebt per stap.
 
+### Bekijk nu de video over [technisch ontwerp, insert en delete](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140) op Brightspace
+
 **Create (uitwerking individueel)**
 
 > Werk de [**opdracht**](start) uit in je persoonlijke map in de htdocs folder. De startcode staat in de map `start`.
