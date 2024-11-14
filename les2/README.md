@@ -22,7 +22,9 @@ Aan de linkerkant zie je dat er nu een database is toegevoegd met de naam `music
 
 Wanneer je informatie wilt ophalen uit de database zul je dit moeten doen d.m.v. een vraag. De database die wij gebruiken, werkt met de taal SQL. Via SQL ga je specifieke vragen stellen aan de database. De vraag die je stelt noemen we een query en dan specifiek een [SELECT Statement](https://www.w3schools.com/sql/sql_select.asp).
 
-Open de `music_collection` database door op het 'plusje' voor de naam te klikken en klik vervolgens op de naam `albums`. Klik nu bovenin op het tabblad 'SQL'. Hier kun je SQL-queries invoeren en zien welk resultaat de database als antwoord geeft. **Let op! Het resultaat van een SELECT Statement is altijd een tabel, ook als deze leeg is**.
+Open de `music_collection` database door op het 'plusje' voor de naam te klikken en klik vervolgens op de naam `albums`. Klik nu bovenin op het tabblad 'SQL'. Hier kun je SQL-queries invoeren en zien welk resultaat de database als antwoord geeft. 
+
+**Let op! Het resultaat van een SELECT Statement is altijd een tabel, ook als deze leeg is**.
 
 > Formuleer voor onderstaande zinnen de juiste SELECT Statements en voer deze uit op de database.
 >
