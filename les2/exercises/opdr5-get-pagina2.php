@@ -1,7 +1,5 @@
 <?php
-
-// Create an array and fill it with 7 words (strings)
-
+// Store the name of the selected pill in a variable and show this in the HTML
 
 ?>
 <!doctype html>
@@ -11,19 +9,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opdracht 5 - GET - het antwoord</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <title>Words Table | Programmeren 2</title>
 </head>
 <body>
 <section class="section">
-    <div class="content">
-        <h2 class="title is-2">
-            Words Table
-        </h2>
+    <div class="container">
 
-        <!-- Create a table with 2 columns-->
-        <!-- Fill the first column of the table with numbers (1 - 7)-->
-        <!-- Fill the second column with the words from the array. -->
+        <h2 class="title">Opdracht 5 - GET - Het antwoord</h2>
+
+        <!--Toon hieronder het antwoord-->
+
+        <footer class="footer mt-4">
+            <a href="index.php">Terug naar het overzicht van de lesopdrachten</a>
+        </footer>
     </div>
 </section>
 </body>

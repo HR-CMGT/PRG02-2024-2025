@@ -50,3 +50,4 @@ $musicAlbums =
         </section>
     </main>
 </body>
+</html>
