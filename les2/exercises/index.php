@@ -106,17 +106,26 @@
             opdracht hierboven. Haal de albumdata op uit de database en toon deze in (de bestaande) tabel.
         </blockquote>
         <p class="is-italic">
-            Tip 1: in het bestand <code>les2/examples/database-query-flow.php</code> staat de volledige code
-            beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt.
-            <br/>
-            Tip 2: in de map <code>les2/includes</code> staat het bestand <code>connection.php</code>. Dit is
-            ook het
-            bovenste deel van de code uit <code>database-query-flow.php</code>, dus let op dat je het niet
-            dubbel doet.
-            Deze kan je importeren met de PHP-functie <code>require_once</code>. Hierna is er verbinding gemaakt
-            met de database.
-            Dit kun je ook gebruiken bij de volgende opdracht (details.php) om verbinding te maken met de
-            database.
+            <p>Tip 1</p>
+            <p>
+                <em>
+                    In het bestand <code>les2/examples/database-query-flow.php</code> staat de volledige code
+                    beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt.
+                </em>
+            </p>
+            <p>Tip 2</p>
+            <p>
+                <em>
+                    In de map <code>les2/includes</code> staat het bestand <code>connection.php</code>. Dit is
+                    ook het
+                    bovenste deel van de code uit <code>database-query-flow.php</code>, dus let op dat je het niet
+                    dubbel doet.
+                    Deze kan je importeren met de PHP-functie <code>require_once</code>. Hierna is er verbinding gemaakt
+                    met de database.
+                    Dit kun je ook gebruiken bij de volgende opdracht (details.php) om verbinding te maken met de
+                    database.
+                </em>
+            </p>
         </p>
     </div>
 </section>

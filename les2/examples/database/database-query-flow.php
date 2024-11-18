@@ -1,6 +1,6 @@
 <?php
 // Gegevens voor de connectie
-$host       = 'localhost';
+$host       = '127.0.0.1';
 $username   = 'root';
 $password   = '';
 $database   = 'music_collection';
@@ -18,9 +18,9 @@ $db = mysqli_connect($host, $username, $password, $database)
 $query = "SELECT * FROM albums";
 // Stap 4: Query uitvoeren op de database. Als dit goed gaat, geeft
 //         mysqli_query een mysqli_result terug. Let op, dit is een tabel.
-// Stap 5: Foutafhandeling. Als de query niet uitgevoerd kan worden treedt
+// Stap 5: Foutafhandeling. Als de query niet uitgevoerd kan worden, treedt
 //         er een foutmelding op via "or die". Ook de query, met ingevulde
-//         variabelen, wordt op het scherm getoond. Deze kan je kopieren
+//         variabelen, wordt op het scherm getoond. Deze kan je kopiëren
 //         en plakken in PhpMyAdmin om te kijken waarom het fout gaat.
 $result = mysqli_query($db, $query)
     or die('Error '.mysqli_error($db).' with query '.$query);
@@ -28,11 +28,12 @@ $result = mysqli_query($db, $query)
 // Stap 6: Resultaat verwerken. Er wordt een nieuwe array gemaakt waarin alle
 //         rijen uit de db komen. In dit geval is een rij een album.
 $albums = [];
-//         mysqli_fetch_assoc haalt een rij uit de db en zet deze om naar
+//         mysqli_fetch_assoc haalt een rij uit het result en zet deze om naar
 //         een associatieve array. De namen van de index corresponderen met de
 //         kolomnamen (velden) van de tabel
 //         Als er geen rijen meer zijn in het resultaat geeft mysqli_fetch_assoc
 //         'false' terug en stopt de while loop.
+
 while($row = mysqli_fetch_assoc($result))
 {
     // elke rij (dit is een album) wordt aan de array 'albums' toegevoegd.
@@ -59,7 +60,7 @@ mysqli_close($db);
         // van een album getoond worden.
         foreach ($albums as $album) { ?>
 
-            <li><?= $album['name'] ?> <?= $album['artist']?></li>
+            <li><?= $album['name'] ?> | <?= $album['artist']?></li>
 
         <?php } ?>
     </ul>

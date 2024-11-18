@@ -22,7 +22,9 @@ Aan de linkerkant zie je dat er nu een database is toegevoegd met de naam `music
 
 Wanneer je informatie wilt ophalen uit de database zul je dit moeten doen d.m.v. een vraag. De database die wij gebruiken, werkt met de taal SQL. Via SQL ga je specifieke vragen stellen aan de database. De vraag die je stelt noemen we een query en dan specifiek een [SELECT Statement](https://www.w3schools.com/sql/sql_select.asp).
 
-Open de `music_collection` database door op het 'plusje' voor de naam te klikken en klik vervolgens op de naam `albums`. Klik nu bovenin op het tabblad 'SQL'. Hier kun je SQL-queries invoeren en zien welk resultaat de database als antwoord geeft. **Let op! Het resultaat van een SELECT Statement is altijd een tabel, ook als deze leeg is**.
+Open de `music_collection` database door op het 'plusje' voor de naam te klikken en klik vervolgens op de naam `albums`. Klik nu bovenin op het tabblad 'SQL'. Hier kun je SQL-queries invoeren en zien welk resultaat de database als antwoord geeft. 
+
+**Let op! Het resultaat van een SELECT Statement is altijd een tabel, ook als deze leeg is**.
 
 > Formuleer voor onderstaande zinnen de juiste SELECT Statements en voer deze uit op de database.
 >
@@ -41,8 +43,13 @@ Open de `music_collection` database door op het 'plusje' voor de naam te klikken
 
 > Gebruik de indexpagina uit de vorige les, maar koppel deze nu aan de [database](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/pt/querying-the-table). Dit vervangt de multidimensionale array. Gebruik hiervoor de database uit opdracht hierboven. Haal albumdata op uit de database en toon deze in (de bestaande) tabel.
 
-_Tip 1: in het bestand `les2/examples/database/database-query-flow.php` staat de volledige code beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt.  
-Tip 2: in de map `les2/start/includes` staat het bestand `connection.php`. Dit is ook het bovenste deel van de code uit `database-query-flow.php`, dus let op dat je het niet dubbel doet. Deze kan je importeren met de PHP-functie `require_once`. Hierna is er verbinding gemaakt met de database. Dit kun je ook gebruiken bij de volgende opdracht (details.php) om verbinding te maken met de database._
+_Tip 1_
+
+_in het bestand `les2/examples/database/database-query-flow.php` staat de volledige code beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt._
+
+_Tip 2_ 
+
+_in de map `les2/start/includes` staat het bestand `connection.php`. Dit is ook het bovenste deel van de code uit `database-query-flow.php`, dus let op dat je het niet dubbel doet. Deze kan je importeren met de PHP-functie `require_once`. Hierna is er verbinding gemaakt met de database. Dit kun je ook gebruiken bij de volgende opdracht (details.php) om verbinding te maken met de database._
 
 GET Request
 ===========
