@@ -47,7 +47,7 @@
             als waar het formulier te zien is.
         </p>
         <blockquote>
-            Beantwoord voor deze opdracht eerst de drie vragen uit de werkmethode.
+            Schrijf (in tweetallen) de pseudocode uit voor deze opdracht.
         </blockquote>
 
         <p>Nadat je het ontwerp gemaakt hebt, bepaal je per stap de techniek die je daarbij nodig hebt. Werk de

@@ -11,7 +11,7 @@ POST Request
 
 In deze opdracht vult een bezoeker een formulier in, maar deze data wordt afgehandeld in dezelfde pagina. Dit noemen we een Postback. Er is dus geen pagina 2 die de data verwerkt. Je zult de beslissing of de data verwerkt moet worden dus op dezelfde pagina moeten nemen als waar het formulier te zien is.
 
-> Beantwoord voor deze opdracht eerst de drie vragen uit de werkmethode.
+> Schrijf (in tweetallen) de pseudocode uit voor deze opdracht.
 
 Nadat je het ontwerp gemaakt hebt, bepaal je per stap de techniek die je daarbij nodig hebt. Werk de techniek stap voor stap uit en gebruik `print_r()` om informatie te loggen. Zo kan je zien of je de stap goed uitgewerkt hebt.
 
