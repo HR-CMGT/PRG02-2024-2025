@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Lesopdrachten les 1</title>
+    <title>Lesopdrachten les 2</title>
 </head>
 <body>
 <section class="hero is-primary">
@@ -236,3 +236,5 @@
         </blockquote>
     </div>
 </section>
+</body>
+</html>
