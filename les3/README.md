@@ -3,11 +3,11 @@
 POST Request
 ============
 
-**Opdracht 1: Informatie doorsturen via een formulier.**
+## **Opdracht 1: Informatie doorsturen via een formulier.**
 
 > Pas [pagina 1](exercises/opdr1-post-pagina1.html) aan zodat je ingevulde voornaam getoond wordt op [pagina 2](exercises/opdr1-post-pagina2.php).
 
-**Opdracht 2: Informatie uit een formulier afhandelen in dezelfde pagina.**
+## **Opdracht 2: Informatie uit een formulier afhandelen in dezelfde pagina.**
 
 In deze opdracht vult een bezoeker een formulier in, maar deze data wordt afgehandeld in dezelfde pagina. Dit noemen we een Postback. Er is dus geen pagina 2 die de data verwerkt. Je zult de beslissing of de data verwerkt moet worden dus op dezelfde pagina moeten nemen als waar het formulier te zien is.
 
@@ -31,12 +31,15 @@ Nadat je het ontwerp gemaakt hebt, bepaal je per stap de techniek die je daarbij
 Opdracht 3 Createpagina
 =======================
 
-Het toevoegen van een nieuw muziekalbum
----------------------------------------
+### Het toevoegen van een nieuw muziekalbum
 
-_Voeg een "Create" link toe, boven de tabel op de indexpagina. Na het aanklikken van de link wordt de bijbehorende `create.php` geladen met een formulier waarvan de velden overeenkomen met de gegevens van een album.  
-Voor create kun je gebruik maken van de voorbeeldpagina uit de `start`map. Stuur de data van het formulier terug naar dezelfde pagina (Postback) en controleer of alle velden zijn ingevuld. Laat een notificatie zien als alle velden correct zijn ingevuld.  
-Vind je dit lastig dan mag je ook een aparte pagina `(store.php)` maken die de ingevuld data laat zien._
+
+_Voeg een "Create" link toe, boven de tabel op de indexpagina. Na het aanklikken van de link wordt de bijbehorende 
+`create.php` geladen met een formulier waarvan de velden overeenkomen met de gegevens van een album. Voor create kun je 
+gebruik maken van de voorbeeldpagina uit de `start`map.  
+Wanneer een bezoeker het formulier heeft ingevuld en op Save klikt, wordt de informatie naar de pagina store.php gestuurd. 
+Deze pagina zal je nog moeten aanmaken. Op deze pagina wordt de informatie uit het formulier uitgelezen en vervolgens 
+toegevoegd aan de database._
 
 **Create (ontwerp tweetallen)**
 
@@ -46,25 +49,48 @@ Vind je dit lastig dan mag je ook een aparte pagina `(store.php)` maken die de i
 > 2.  Wat moet er stap voor stap gebeuren om het resultaat te bereiken? Let op! Je mag geen technische termen gebruiken het gaat om de functionaliteit.
 > 3.  Bedenk (of zoek op) welke technische onderdelen je nodig hebt per stap.
 
-### Bekijk nu de video over [technisch ontwerp, insert en delete](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140) op Brightspace
+Opdracht 4: SQL - INSERT query
+==============================
+
+### Het toevoegen van een nieuw album aan de database (in PHPMyAdmin)
+
+
+> Bekijk nu de **video** over [technisch ontwerp, insert en delete](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140) op Brightspace
+
+Open [PhpMyAdmin](http://phpmyadmin.test/) en klik op de database [music\_collection](http://phpmyadmin.test/index.php?route=/database/sql&db=music_collection) en vervolgens op de tabel [albums](http://phpmyadmin.test/index.php?route=/table/sql&db=music_collection&table=albums). Klik vervolgens op de tab 'SQL'.
+
+> Noteer voor het volgende album de INSERT query.
+>
+> *   album: The Dark Side Of The Moon
+> *   artist: Pink Floyd
+> *   genre: Progressive Rock
+> *   year: 1973
+> *   tracks: 9
+
+Klik nu op de tab 'Insert' / 'Invoegen'.
+
+> Voeg hier een album naar keuze toe d.m.v. het formulier (voer de **id** niet in).  
+> Zie je een groene balk met de tekst: '1 row inserted.' / '1 rij toegevoegd.', dan is het gelukt. Hieronder staat een 
+> query. Vergelijk deze query met jouw query.
+
+Opdracht 5: Createpagina uitwerken
+==================================
+
+### Het toevoegen van een nieuw muziekalbum
 
 **Create (uitwerking individueel)**
 
-> Werk de [**opdracht**](start) uit in je persoonlijke map in de Development folder. De startcode staat in de map `start`.<br><strong>Let op:</strong> gebruik de `index.php` die je hebt gemaakt in de vorige les.
+> Werk de [**opdracht**](../start) uit in je persoonlijke map in de Development folder. De startcode staat in de map `start`.  
+> **Let op:** gebruik de `index.php` die je hebt gemaakt in de vorige les.
 
 Verder werken
 =============
 
-Maak de onderstaande opdrachten om met verschillende onderwerpen te oefenen
+**POST en GET met Postback op dezelfde pagina.**
 
+> Werk [**opdracht 4**](opdr4-post-en-get-postback.php) uit.
 
-### **POST en GET met Postback op dezelfde pagina.**
+**Createpagina met Postback**
 
-> Werk [**opdracht 4**](exercises/opdr4-post-en-get-postback.php) uit.
-
-
-### **Validatie uitbreiden**
-
-> *   Maak een uitbreiding op de validatie. Zorg ervoor dat er niet alleen een controle plaatsvindt of het inputelement leeg is, maar bijvoorbeeld ook of het een getal, emailadres of een postcode is.
-> *   Maak per check een aparte foutmelding en laat alleen de eerst foutmelding per inputlement zien.
-> *   Zet de formvalidatie in een apart bestand en laadt deze in de createpagina.
+> Je kunt alvast vooruit werken door de createpagina te maken met een Postback. De informatie van het formulier wordt in 
+> dat geval naar de `create.php` pagina teruggestuurd en verwerkt.
