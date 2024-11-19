@@ -196,7 +196,7 @@
             <strong>Details (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de htdocs
+            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de Development
             folder.
             De startcode staat in de map <code>start</code>.
         </blockquote>

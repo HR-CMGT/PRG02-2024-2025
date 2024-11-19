@@ -119,7 +119,7 @@
         </blockquote>
 
         <h2>
-            Bekijk nu de video over <a href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140">
+            Bekijk nu de video over <a href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140" target="_blank">
                 technisch ontwerp, insert en delete
             </a> op Brightspace
         </h2>
@@ -128,9 +128,11 @@
             <strong>Create (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de htdocs
+            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de Development
             folder.
             De startcode staat in de map <code>start</code>.
+              <br>
+              <strong>Let op:</strong> gebruik de <code>index.php</code> die je hebt gemaakt in de vorige les.
         </blockquote>
     </div>
 </section>
