@@ -50,7 +50,7 @@ Vind je dit lastig dan mag je ook een aparte pagina `(store.php)` maken die de i
 
 **Create (uitwerking individueel)**
 
-> Werk de [**opdracht**](start) uit in je persoonlijke map in de Development folder. De startcode staat in de map `start`.
+> Werk de [**opdracht**](start) uit in je persoonlijke map in de Development folder. De startcode staat in de map `start`.<br><strong>Let op:</strong> gebruik de `index.php` die je hebt gemaakt in de vorige les.
 
 Verder werken
 =============
