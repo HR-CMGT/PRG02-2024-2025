@@ -41,7 +41,7 @@ Open de `music_collection` database door op het 'plusje' voor de naam te klikken
 ### De indexpagina waarbij de informatie uit de **database** komt
 
 
-> Gebruik de indexpagina uit de vorige les, maar koppel deze nu aan de [database](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/pt/querying-the-table). Dit vervangt de multidimensionale array. Gebruik hiervoor de database uit opdracht hierboven. Haal albumdata op uit de database en toon deze in (de bestaande) tabel.
+> Gebruik de indexpagina uit de vorige les, maar koppel deze nu aan de [database](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/pt/querying-the-table). Dit vervangt de multidimensionale array. Gebruik hiervoor de database uit de opdracht hierboven. Haal albumdata op uit de database en toon deze in de (bestaande) tabel.
 
 _Tip 1_
 
@@ -68,7 +68,7 @@ GET Request
 ### De details van een muziekalbum
 
 
-_Maak een webpagina met de detailinformatie van een muziekalbum (details.php). Voeg achter elk album op de **indexpagina** een detaillink toe. Deze verwijst naar `details.php`, deze staat al klaar in de map [start](start/details.php). Alle albums verwijzen naar dezelfde details.php, maar tonen toch alleen de details van het album waarop geklikt is (op de indexpagina)_
+_Maak een webpagina met de detailinformatie van één muziekalbum (details.php). Voeg achter elk album op de **indexpagina** een detaillink toe. Deze verwijst naar `details.php`, deze staat al klaar in de map [start](start/details.php). Alle albums verwijzen naar dezelfde details.php, maar tonen toch alleen de details van het album waarop geklikt is (op de indexpagina)_
 
 **Details (ontwerp in tweetallen)**
 

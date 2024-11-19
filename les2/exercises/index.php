@@ -25,7 +25,7 @@
     </h2>
     <div class="content">
         <p>
-            <strong>Opdracht 1 Database importeren</strong>
+            <strong>Opdracht 1: Database importeren</strong>
         </p>
         <p>
             In deze opdracht ga je oefenen met het ophalen van data uit de database. Hiervoor heb je eerst een
@@ -53,7 +53,7 @@
             de tabelnaam te klikken.
         </p>
         <p>
-            <strong>Opdracht 2 Data selecteren met het SELECT statement</strong>
+            <strong>Opdracht 2: Data selecteren met het SELECT statement</strong>
         </p>
         <p>
             Wanneer je informatie wilt ophalen uit de database zul je dit moeten doen d.m.v. een vraag.
@@ -94,7 +94,7 @@
 </section>
 
 <section class="section has-background-primary-light">
-    <h1 class="title">Opdracht 3 Indexpagina</h1>
+    <h1 class="title">Opdracht 3: Indexpagina</h1>
     <h2 class="subtitle">
         De indexpagina waarbij de informatie uit de <strong>database</strong> komt
     </h2>
@@ -109,14 +109,14 @@
             <p>Tip 1</p>
             <p>
                 <em>
-                    In het bestand <code>les2/examples/database-query-flow.php</code> staat de volledige code
+                    In het bestand <code>les2/examples/database/database-query-flow.php</code> staat de volledige code
                     beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt.
                 </em>
             </p>
             <p>Tip 2</p>
             <p>
                 <em>
-                    In de map <code>les2/includes</code> staat het bestand <code>connection.php</code>. Dit is
+                    In de map <code>les2/start/includes</code> staat het bestand <code>connection.php</code>. Dit is
                     ook het
                     bovenste deel van de code uit <code>database-query-flow.php</code>, dus let op dat je het niet
                     dubbel doet.
@@ -162,14 +162,14 @@
 
 <!--Details-->
 <section class="section has-background-primary-light">
-    <h1 class="title">Opdracht 6 Detailpagina</h1>
+    <h1 class="title">Opdracht 6: Detailpagina</h1>
     <h2 class="subtitle">
         De details van een muziekalbum
     </h2>
     <div class="content">
         <p>
             <em>
-                Maak een webpagina met de detailinformatie van een muziekalbum (details.php).
+                Maak een webpagina met de detailinformatie van één muziekalbum (details.php).
                 Voeg achter elk album op de <strong>indexpagina</strong> een detaillink toe. Deze verwijst naar
                 <code>details.php</code>, deze staat al klaar in de map <a href="../start/details.php" target="_blank">start</a>.
                 Alle albums verwijzen naar dezelfde details.php, maar tonen toch alleen de details van het album
@@ -196,7 +196,7 @@
             <strong>Details (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de htdocs
+            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de Development
             folder.
             De startcode staat in de map <code>start</code>.
         </blockquote>
