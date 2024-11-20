@@ -80,7 +80,7 @@ Opdracht 5: Createpagina uitwerken
 
 **Create (uitwerking individueel)**
 
-> Werk de [**opdracht**](../start) uit in je persoonlijke map in de Development folder. De startcode staat in de map `start`.  
+> Werk de [**opdracht**](start) uit in je persoonlijke map in de Development folder. De startcode staat in de map `start`.  
 > **Let op:** gebruik de `index.php` die je hebt gemaakt in de vorige les.
 
 Verder werken
@@ -88,7 +88,7 @@ Verder werken
 
 **POST en GET met Postback op dezelfde pagina.**
 
-> Werk [**opdracht 4**](opdr4-post-en-get-postback.php) uit.
+> Werk [**opdracht 4**](exercises/opdr4-post-en-get-postback.php) uit.
 
 **Createpagina met Postback**
 

@@ -12,9 +12,9 @@ te controleren is op de server. In dit geval zal je dat dus met PHP moeten doen.
 Technieken die je hierbij nodig hebt zijn:
 
 *   Postback, meer info is te vinden in het [filmpje over Post en Postback](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/542739).
-*   Validatie, [voorbeeld](../examples/validation) van deze les in `les4/examples/validation`
+*   Validatie, [voorbeeld](examples/validation) van deze les in `les4/examples/validation`
 
-> In het bestand [opdr1-validation.php](opdr1-validation.php) zie je een formulier. Zorg ervoor dat het formulier in 
+> In het bestand [opdr1-validation.php](exercises/opdr1-validation.php) zie je een formulier. Zorg ervoor dat het formulier in 
 > PHP wordt gecontroleerd (dus niet met het attribuut `required` in de HTML). Wanneer het veld leeg gelaten wordt, moet 
 > er een foutmelding in de HTML getoond worden.
 
