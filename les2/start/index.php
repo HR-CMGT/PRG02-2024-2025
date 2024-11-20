@@ -1,7 +1,5 @@
 <?php
 
-//Multidimensional array with the music collection data
-
 ?>
 <!doctype html>
 <html lang="en" data-theme="light">

@@ -47,7 +47,7 @@
             als waar het formulier te zien is.
         </p>
         <blockquote>
-            Beantwoord voor deze opdracht eerst de drie vragen uit de werkmethode.
+            Schrijf (in tweetallen) de pseudocode uit voor deze opdracht.
         </blockquote>
 
         <p>Nadat je het ontwerp gemaakt hebt, bepaal je per stap de techniek die je daarbij nodig hebt. Werk de
@@ -84,7 +84,7 @@
 
 <!--Create-->
 <section class="section has-background-primary-light">
-    <h1 class="title">Opdracht 3 Createpagina</h1>
+    <h1 class="title">Opdracht 3: Createpagina</h1>
     <h2 class="subtitle">
         Het toevoegen van een nieuw muziekalbum
     </h2>
@@ -93,14 +93,12 @@
             <em>
                 Voeg een "Create" link toe, boven de tabel op de indexpagina. Na het aanklikken van de link
                 wordt de bijbehorende <code>create.php</code> geladen met een formulier waarvan de velden overeenkomen
-                met de gegevens van een album.
+                met de gegevens van een album. Voor create kun je gebruik maken van de voorbeeldpagina uit de
+                <code>start</code>map.
                 <br>
-                Voor create kun je gebruik maken van de voorbeeldpagina uit de <code>start</code>map.
-                Stuur de data van het formulier terug naar dezelfde pagina (Postback) en controleer of alle
-                velden zijn ingevuld. Laat een notificatie zien als alle velden correct zijn ingevuld.
-                <br>
-                Vind je dit lastig dan mag je ook een aparte pagina <code>(store.php)</code> maken die de
-                ingevuld data laat zien.
+                Wanneer een bezoeker het formulier heeft ingevuld en op Save klikt, wordt de informatie naar de pagina
+                store.php gestuurd. Deze pagina zal je nog moeten aanmaken. Op deze pagina wordt de informatie
+                uit het formulier uitgelezen en vervolgens toegevoegd aan de database.
             </em>
         </p>
         <p>
@@ -117,20 +115,66 @@
                 <li>Bedenk (of zoek op) welke technische onderdelen je nodig hebt per stap.</li>
             </ol>
         </blockquote>
+    </div>
+</section>
 
-        <h2>
-            Bekijk nu de video over <a href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140">
+<section class="section">
+    <h1 class="title">Opdracht 4: SQL - INSERT query</h1>
+    <h2 class="subtitle">
+        Het toevoegen van een nieuw album aan de database (in PHPMyAdmin)
+    </h2>
+    <div class="content">
+        <blockquote>
+            Bekijk nu de <strong>video</strong> over <a href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140" target="_blank">
                 technisch ontwerp, insert en delete
             </a> op Brightspace
-        </h2>
+        </blockquote>
 
+        <p>
+            Open <a href="http://phpmyadmin.test/" target="_blank">PhpMyAdmin</a> en klik op de database <a
+                    href="http://phpmyadmin.test/index.php?route=/database/sql&db=music_collection"
+                    target="_blank">music_collection</a> en vervolgens op de tabel <a
+                    href="http://phpmyadmin.test/index.php?route=/table/sql&db=music_collection&table=albums"
+                    target="_blank">albums</a>.
+            Klik vervolgens op de tab 'SQL'.
+        </p>
+        <blockquote>
+            Noteer voor het volgende album de INSERT query.
+
+            <ul>
+                <li>album: <span class="is-italic">The Dark Side Of The Moon</span></li>
+                <li>artist: <span class="is-italic">Pink Floyd</span></li>
+                <li>genre: <span class="is-italic">Progressive Rock</span></li>
+                <li>year: <span class="is-italic">1973</span></li>
+                <li>tracks: <span class="is-italic">9</span></li>
+            </ul>
+        </blockquote>
+
+        Klik nu op de tab 'Insert' / 'Invoegen'.
+        <blockquote>
+            Voeg hier een album naar keuze toe d.m.v. het formulier (voer de <strong>id</strong> niet in).
+            <br>
+            Zie je een groene balk met de tekst: '1 row inserted.' / '1 rij toegevoegd.', dan is het gelukt.
+            Hieronder staat een query. Vergelijk
+            deze query met jouw query.
+        </blockquote>
+    </div>
+</section>
+<section class="section has-background-primary-light">
+    <h1 class="title">Opdracht 5: Createpagina uitwerken</h1>
+    <h2 class="subtitle">
+        Het toevoegen van een nieuw muziekalbum
+    </h2>
+    <div class="content">
         <p>
             <strong>Create (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de htdocs
+            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de Development
             folder.
             De startcode staat in de map <code>start</code>.
+              <br>
+              <strong>Let op:</strong> gebruik de <code>index.php</code> die je hebt gemaakt in de vorige les.
         </blockquote>
     </div>
 </section>
@@ -146,15 +190,11 @@
             Werk <a href="opdr4-post-en-get-postback.php" target="_blank"><strong>opdracht 4</strong></a> uit.
         </blockquote>
         <p>
-            <strong>Validatie uitbreiden</strong>
+            <strong>Createpagina met Postback</strong>
         </p>
         <blockquote>
-            <ul>
-                <li>Maak een uitbreiding op de validatie. Zorg ervoor dat er niet alleen een controle plaatsvindt of het
-                    inputelement leeg is, maar bijvoorbeeld ook of het een getal, emailadres of een postcode is.</li>
-                <li>Maak per check een aparte foutmelding en laat alleen de eerst foutmelding per inputlement zien.</li>
-                <li>Zet de formvalidatie in een apart bestand en laadt deze in de createpagina.</li>
-            </ul>
+            Je kunt alvast vooruit werken door de createpagina te maken met een Postback. De informatie van het
+            formulier wordt in dat geval naar de <code>create.php</code> pagina teruggestuurd en verwerkt.
         </blockquote>
     </div>
 </section>
