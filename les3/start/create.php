@@ -30,7 +30,7 @@
                                 <input class="input" id="name" type="text" name="name" value=""/>
                             </div>
                             <p class="help is-danger">
-                                Hier komt de foutmelding re staan
+                                Hier komt de foutmelding te staan
                             </p>
                         </div>
                     </div>
