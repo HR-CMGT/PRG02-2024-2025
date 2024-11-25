@@ -13,20 +13,19 @@
 > Video's die in de regulier les worden gebruikt op Brightspace! Hier worden bepaalde concepten zeer 
 > helden en uitgebreid toegelicht.
 
-### Opdracht 1: Installeren composer
+### Opdracht 1: Kennismaken met composer (klassikaal)
 
 Om tijdens het werken met (vele) classes niet meer bezig te hoeven zijn met handmatige require statements,
-kun je de auto loader van composer gebruiken. Dit is de hoofdreden waarvoor we composer nu toepassen.
+kun je de autoloader van composer gebruiken. Dit is de hoofdreden waarvoor we composer nu toepassen.
 
 Een andere, in de praktijk meest gebruikte, reden om composer te gebruiken is het downloaden van packages.
 Pakketjes code die door andere ontwikkelaars zijn geschreven die jij zo in je eigen project kunt inladen
 en gebruiken. Op https://packagist.org/ kun je al die packages vinden!
 
-- Ga naar https://getcomposer.org/ en installeer composer op je eigen machine
-- Na installatie heb je het `composer` commando tot je beschikking op je computer. Dit commando heb je nodig
-  tijdens de demo in de les. Check de uitwerking van dit voorbeeld na de les als je er nog naar wilt terugkijken.
-  Besef je goed dat je zelf altijd `composer install` moet draaien als je die code ergens neerzet omdat de
-  `vendor` map niet in Git mag komen te staan.
+Door de installatie van Herd is composer ook geïnstalleerd. Daarmee heb je het `composer` commando tot je
+beschikking op je computer. Dit commando heb je nodig tijdens de demo in de les. Check de uitwerking van 
+dit voorbeeld na de les als je er nog naar wilt terugkijken. Besef je goed dat je zelf altijd `composer install`
+moet draaien als je die code ergens neerzet omdat de `vendor` map niet in Git mag komen te staan.
 
 In de demo van de les hebben we het volgende gedaan:
 - Terminal open in phpStorm zodat we composer kunnen gebruiken;
