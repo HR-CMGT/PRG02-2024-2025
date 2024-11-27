@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) {
             <label for="email">Email</label>
             <input id="email" type="text" name="email" />
 
-            <!--Toon hier de error. Als er geen error is, wordt de span gevuld met een lege string. Deze zie je dan niet-->
+            <!--Toon hier de error. Als er geen error is, wordt de span gevuld met een lege string. Deze zie je dan niet in de website -->
             <span><?= $emailError ?></span>
 
             <input type="submit" name="submit" />
