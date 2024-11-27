@@ -25,7 +25,7 @@ Voor deze opdracht kan je gebruik maken van het voorbeeld `week5/examples/hidden
 
 ### Opdracht 4: Pseudo Code
 
-In deze opdracht schrijf je de pseudo code voor de updatepagina. Hiervoor kun je (als hulpmiddel) gebruik maken van de drie vragen uit de eerdere lessen of van de [werkmethode](https://brightspace.hr.nl/d2l/le/lessons/28859/units/231506).  
+In deze opdracht schrijf je de pseudo code voor de updatepagina. Hiervoor kun je (als hulpmiddel) gebruik maken van de drie vragen uit de eerdere lessen of van de [werkmethode](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/542388).  
 _In de werkmethode zitten dezelfde drie vragen verwerkt met aanvullende informatie. Er is een stap toegevoegd waarin je terugkijkt naar je oplossing._
 
 1.  Welke informatie / data heb je nodig als input voor deze opdracht?

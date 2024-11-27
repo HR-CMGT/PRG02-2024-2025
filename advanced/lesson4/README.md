@@ -58,8 +58,11 @@ een [voorbeeld](example/students_composer) uitgewerkt met composer waarin je ter
 Momenteel zijn er nog 5 hoofdbestanden in ons project (index, detail, create, edit, delete). In de les hebben we
 een [voorbeeld](example/templating) uitgewerkt met templates waarin je terug kunt kijken hoe het werkt.
 
-- Kopieer de `.htaccess`. Deze heb je nodig om al in inkomende verkeer naar index.php te leiden
-- Bouw je initialize om zodat deze gebruik maakt van de GET-parameter genaamd `_url`
+- Gebruik de server.php voor je eigen applicatie en start deze vanaf nu met het volgende commando:
+```bash
+php -S localhost:8888 server.php
+```
+- Bouw je initialize (zie voorbeeld) om zodat deze gebruik maakt van de GET-parameter genaamd `_url`
 - Laad de juiste pages aan juiste template in op basis van deze waarde
 - Toon een 404 template als de waarde niet bestaat
 
