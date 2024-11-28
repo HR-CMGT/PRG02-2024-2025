@@ -66,7 +66,7 @@ van de muziekalbums hebben gedaan:
 
 Tot nu toe werden onze errors getoond op het scherm. Direct zichtbaar voor jou als eindgebruiker.
 Daaraan zitten uiteraard risico's verbonden. Het belangrijkste risico is dat je daarmee een potentiële
-hacker eel informatie geeft over jouw systeem en hoe jouw mappen/bestanden zijn ingericht. Iemand die
+hacker veel informatie geeft over jouw systeem en hoe jouw mappen/bestanden zijn ingericht. Iemand die
 kwaad wil kan hier misbruik van maken.
 
 Zorg ervoor dat je op het scherm enkel nog een melding ziet als 'Er is helaas iets fout gegaan', en dat
