@@ -32,7 +32,7 @@ class Image
         }
 
         //You should also check filesize here.
-        if ($uploadFile['size'] > 1000000) {
+        if ($uploadFile['size'] > 10000000) {
             throw new \RuntimeException('Exceeded filesize limit.');
         }
 
