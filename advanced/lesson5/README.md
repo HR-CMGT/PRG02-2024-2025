@@ -117,3 +117,15 @@ class Logger
     }
 }
 ```
+
+## Troublehooting
+
+Loop je tegen limitaties aan in bijvoorbeeld uploads of missen van foutmeldingen. Pas dan je
+php.ini aan en zorg ervoor dat de volgende instellingen goed staan:
+
+```ini
+memory_limit=256M
+upload_max_filesize=50M
+post_max_size=100M
+error_reporting=E_ALL
+```
