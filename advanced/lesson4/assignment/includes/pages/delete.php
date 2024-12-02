@@ -11,7 +11,7 @@ if (isset($_GET['continue'])) {
     //Init image class
     $image = new \System\Utils\Image();
 
-    //Save the record to the db
+    //Delete the record to the db
     $album->delete($db->getConnection());
 
     //Remove image
