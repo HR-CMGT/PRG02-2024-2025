@@ -66,7 +66,7 @@ van de muziekalbums hebben gedaan:
 
 Tot nu toe werden onze errors getoond op het scherm. Direct zichtbaar voor jou als eindgebruiker.
 Daaraan zitten uiteraard risico's verbonden. Het belangrijkste risico is dat je daarmee een potentiële
-hacker eel informatie geeft over jouw systeem en hoe jouw mappen/bestanden zijn ingericht. Iemand die
+hacker veel informatie geeft over jouw systeem en hoe jouw mappen/bestanden zijn ingericht. Iemand die
 kwaad wil kan hier misbruik van maken.
 
 Zorg ervoor dat je op het scherm enkel nog een melding ziet als 'Er is helaas iets fout gegaan', en dat
@@ -116,4 +116,16 @@ class Logger
         fclose($this->file);
     }
 }
+```
+
+## Troublehooting
+
+Loop je tegen limitaties aan in bijvoorbeeld uploads of missen van foutmeldingen. Pas dan je
+php.ini aan en zorg ervoor dat de volgende instellingen goed staan:
+
+```ini
+memory_limit=256M
+upload_max_filesize=50M
+post_max_size=100M
+error_reporting=E_ALL
 ```

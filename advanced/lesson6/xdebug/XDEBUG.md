@@ -32,18 +32,22 @@ kun je deze installeren:
 Nu je alles hebt geïnstalleerd kun je xDebug in gebruikt gaan nemen, daarvoor kun je de volgende
 stappen uitvoeren.
 
-1. Zet je browserplugin aan op "debug"
+1. Zet je browserplugin aan op "debug" terwijl je jouw website open hebt staan
    ![Step 1](configure-step1.png)<br><br>
 2. Zet je phpStorm "Start Listening for PHP Debug Connections" aan (icoontje met telefoontje)
    ![Step 2](configure-step2.png)<br><br>
 3. Plaats een breakpoint op een plaats waar je meer informatie over wilt verkrijgen (debugging!)
    ![Step 3](configure-step3.png)<br><br>
 4. Vernieuw de webpagina eenmalig en je wordt automatisch naar phpStorm gestuurd, accepteer hier
-   de request en kies het juiste bestand wat wordt geopend.
+   de request en check of het juiste bestand hier is geselecteerd.
    ![Step 4](configure-step4.png)<br><br>
 5. **YEAH!** Daar is je debuginformatie. Gefeliciteerd, vanaf nu heb je geen `print_r` en `var_dump`
    meer nodig. Welkom in de wereld van professioneel debuggen 🥳
    ![Step 5](configure-step5.png)
+
+> Let op: Na gebruik is het altijd slim om zowel de listener in phpStorm uit te zetten als ook de
+> knop in je plugin van de browser (zet hem weer op 'disable'). Daarmee weet je zeker dat je requests
+> niet per ongeluk blijven hangen door een xDebug proces wat nog draait.
 
 ## Referenties
 
