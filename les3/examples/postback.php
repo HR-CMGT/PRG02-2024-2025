@@ -1,11 +1,11 @@
 <?php
-// Check if the post value is available
+// Check if form has been send.
 if (isset($_POST['submit'])) {
     // If so, check values from our form which where posted to validate
-    // If there are no error, store the value in a variable
-    if ($_POST['title'] == "") {
-        $titleError = "Titel mag niet leeg zijn, probeer het opnieuw!";
+    if ($_POST['title'] === '') {
+        $titleError = 'Titel mag niet leeg zijn, probeer het opnieuw!';
     } else {
+        // If there is no error, store the value in a variable
         $title = $_POST['title'];
     }
 }
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 <?php if (isset($titleError)) { ?>
     <p><?= $titleError; ?></p>
 <?php } ?>
-<form method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
+<form method="post" action="">
     <div>
         <label for="title">Titel</label>
         <input id="title" type="text" name="title">
