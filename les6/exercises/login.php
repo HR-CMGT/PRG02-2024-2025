@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
         <h2 class="title">Log in</h2>
 
         <?php if ($login) { ?>
-            <p>Je bent ingelogd!</p>
+            <p>Je bent al ingelogd!</p>
             <p><a href="logout.php">Uitloggen</a> / <a href="secure.php">Naar secure page</a></p>
         <?php } else { ?>
 
