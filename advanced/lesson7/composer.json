@@ -1,0 +1,28 @@
+{
+  "name": "antwan/music_collection",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "antwan",
+      "email": "moora@hr.nl"
+    }
+  ],
+  "scripts": {
+    "test": "export XDEBUG_MODE=off && phpunit --testdox",
+    "phpstan": "export XDEBUG_MODE=off && phpstan analyse -c phpstan.neon"
+  },
+  "autoload": {
+    "psr-4": {
+      "MusicCollection\\": "app/classes"
+    },
+    "files": [
+      "app/config/settings.php",
+      "app/config/routes.php"
+    ]
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.0",
+    "phpunit/phpunit": "^11"
+  }
+}
