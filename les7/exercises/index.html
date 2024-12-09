@@ -66,9 +66,9 @@
         </blockquote>
         <p class="mb-4">
             Je zult nu zien dat je altijd de eerste user uit de database te zien krijgt. Dit komt omdat we de SQL query
-            beïnvloedt hebben. De query <code>SELECT * FROM users WHERE id='2'</code> haalt een specifieke user op uit de
-            database. Maar door de toevoeging <code>' OR '1' = '1</code>, wordt de query <code>SELECT * FROM users WHERE id='2' OR '1'='1'</code>.
-            Er staat nu: "Selecteer een gebruiker als zijn id = '2' óf als '1 = '1'" en dat laatste is altijd waar. Hierdoor
+            beïnvloedt hebben. De query <code>SELECT * FROM users WHERE id='4'</code> haalt een specifieke user op uit de
+            database. Maar door de toevoeging <code>' OR '1' = '1</code>, wordt de query <code>SELECT * FROM users WHERE id='4' OR '1'='1'</code>.
+            Er staat nu: "Selecteer een gebruiker als zijn id = '4' óf als '1 = '1'" en dat laatste is altijd waar. Hierdoor
             worden alle users geselecteerd. De code <code>$user = mysqli_fetch_assoc($result);</code> kiest vervolgens
             altijd de eerste gebruiker.
         </p>
@@ -110,6 +110,14 @@
                 <li>Zoals je in het resultaat van de vorige query kunt zien, hebben beide tabellen een kolom die <code>name</code> heet. Zorg ervoor dat beide kolommen een unieke naam krijgen: <code>album_name</code> en <code>artist_name</code> (voorbeeld: <code>albums.name AS album_name</code>).</li>
             </ol>
         </blockquote>
+
+        <h3 class="title is-4">
+            Tips
+        </h3>
+        In deze <a href="https://www.youtube.com/watch?v=9yeOJ0ZMUYw&list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt&index=12&ab_channel=Socratica">video</a>
+        wordt uitgelegd hoe je een JOIN-query schrijft en gebruikt.
+        Deze <a href="https://www.youtube.com/watch?v=Jh_pvk48jHA&list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt&index=13&ab_channel=Socratica">video</a>
+        geeft meer informatie over aliases, waarmee je kolommen een andere naam kan geven.
 
         <!--Opdracht 4-->
         <h3 class="title is-4">
