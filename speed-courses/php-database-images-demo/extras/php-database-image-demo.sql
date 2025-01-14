@@ -1,0 +1,15 @@
+CREATE TABLE `users`(
+    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(64) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `image_path` VARCHAR(255) NULL
+);
+CREATE TABLE `posts`(
+    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `user_id` BIGINT UNSIGNED NOT NULL,
+    `title` VARCHAR(64) NOT NULL,
+    `image_path` VARCHAR(255) NOT NULL
+);
+ALTER TABLE
+    `posts` ADD CONSTRAINT `posts_user_id_foreign` FOREIGN KEY(`user_id`) REFERENCES `users`(`id`);

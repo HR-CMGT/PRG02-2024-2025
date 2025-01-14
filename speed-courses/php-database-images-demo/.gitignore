@@ -1,0 +1,3 @@
+.idea
+#You should never upload your settings file to github as it may contain database passwords
+#includes/settings.php
